@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+@function vw($pixel, $width: 375) {
+  $value: math.div($pixel, $width) * 100vw;
+  @return $value;
+}
