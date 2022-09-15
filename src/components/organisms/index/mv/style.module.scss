@@ -59,7 +59,7 @@
     right: 6vw;
 
     @include mq(sp) {
-      font-size: 4vw;
+      font-size: min(4vw, 1.5rem);
       bottom: 1vh;
       right: 3vw;
     }
