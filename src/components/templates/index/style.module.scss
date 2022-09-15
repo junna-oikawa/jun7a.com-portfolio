@@ -1,2 +1,21 @@
-@use '@/styles/common/variable';
-@use '@/styles/common/vw-calculator' as vw;
+@use 'styles/common/variable.scss';
+@use 'styles/common/vw-calculator.scss' as vw;
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main.main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+footer.footer {
+  margin-top: 200px;
+  z-index: 1000;
+}

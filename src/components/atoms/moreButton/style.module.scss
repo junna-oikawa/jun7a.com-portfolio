@@ -1,0 +1,32 @@
+@use 'styles/common/variable';
+@use 'styles/common/vw-calculator' as vw;
+
+.wrapper {
+  width: 120px;
+  display: flex;
+  position: relative;
+
+  img {
+    &.bg {
+      width: 100%;
+    }
+
+    &.arrow {
+      width: 20%;
+      position: absolute;
+      top: 45%;
+      right: 15%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  p {
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

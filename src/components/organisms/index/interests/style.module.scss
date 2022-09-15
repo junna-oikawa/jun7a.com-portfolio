@@ -1,0 +1,40 @@
+@use 'styles/common/variable';
+@use 'styles/common/vw-calculator' as vw;
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: relative;
+
+  img {
+    width: 80vw;
+    height: 60vh;
+    object-fit: cover;
+    position: absolute;
+    top: calc((100% - 80px) / 2);
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 500;
+    text-align: right;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    position: absolute;
+    top: calc((100% - 80px) / 2);
+    left: 15vw;
+    transform: translate(0%, -50%);
+  }
+
+  p {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: right;
+    position: absolute;
+    bottom: 14vh;
+    right: 6vw;
+  }
+}

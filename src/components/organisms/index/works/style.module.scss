@@ -1,0 +1,17 @@
+@use 'styles/common/variable';
+@use 'styles/common/vw-calculator' as vw;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}

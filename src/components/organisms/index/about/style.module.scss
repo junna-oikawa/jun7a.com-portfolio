@@ -1,0 +1,71 @@
+@use 'styles/common/variable';
+@use 'styles/common/vw-calculator' as vw;
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 120px 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  img.bg {
+    width: 700px;
+    opacity: 0.25;
+    position: absolute;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .left {
+      width: 230px;
+      height: 230px;
+
+      .profile_wrapper {
+        width: 250px;
+        mask-image: url('/images/top/about_profile.svg');
+        mask-size: 250px;
+        mask-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+
+        img {
+          width: 230px;
+          height: 220px;
+          transform: translate(10px, 0);
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h3 {
+      }
+
+      p {
+        line-height: 1.2;
+      }
+
+      .grid_wrapper {
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
