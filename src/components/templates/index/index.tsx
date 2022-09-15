@@ -16,8 +16,8 @@ const Top: React.FC = () => {
       </header>
       <main className={Style.main}>
         <MV />
-        {/* <Works />
-        <About /> */}
+        <Works />
+        {/* <About /> */}
       </main>
       {/* <footer className={Style.footer}>
         <Footer />
