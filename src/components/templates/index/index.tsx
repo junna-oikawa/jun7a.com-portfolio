@@ -5,6 +5,7 @@ import Header from 'components/organisms/common/header';
 import Works from 'components/organisms/index/works';
 import About from 'components/organisms/index/about';
 import Footer from 'components/organisms/common/footer';
+import FooterNav from 'components/organisms/common/footer_nav';
 
 const Top: React.FC = () => {
   return (
@@ -13,14 +14,17 @@ const Top: React.FC = () => {
       <header className={Style.header}>
         <Header />
       </header>
-      {/* <main className={Style.main}>
+      <main className={Style.main}>
         <MV />
-        <Works />
-        <About />
+        {/* <Works />
+        <About /> */}
       </main>
-      <footer className={Style.footer}>
+      {/* <footer className={Style.footer}>
         <Footer />
       </footer> */}
+      <div className={Style.footer_nav}>
+        <FooterNav />
+      </div>
     </>
   );
 };
