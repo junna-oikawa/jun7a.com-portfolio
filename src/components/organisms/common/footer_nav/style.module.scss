@@ -4,5 +4,12 @@
 .wrapper {
   width: 100vw;
   height: 50px;
-  background-color: gray;
+  padding: 5px 20px;
+  background-color: #fff;
+  display: flex;
+
+  .icon {
+    width: calc(100% / 4);
+    height: 100%;
+  }
 }

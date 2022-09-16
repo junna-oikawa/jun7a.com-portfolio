@@ -5,7 +5,7 @@ import Image from 'next/image';
 const MV: React.FC = () => {
   return (
     <>
-      <div className={Style.wrapper}>
+      <section className={Style.wrapper} id='top'>
         <img src='/images/top/mv.jpg' alt='' />
         <h1 className='en'>
           Junna
@@ -19,7 +19,7 @@ const MV: React.FC = () => {
           <br />
           Web Engineering, Web design, Glaphic design, Game design etc...
         </p>
-      </div>
+      </section>
     </>
   );
 };

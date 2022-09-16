@@ -1,0 +1,22 @@
+@use 'styles/common/colors' as color;
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  img {
+    height: 22px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: color(1);
+    margin-top: -6px;
+  }
+}

@@ -35,7 +35,7 @@ const langs: JSX.Element[] = [
 const About: React.FC = () => {
   return (
     <>
-      <section className={Style.wrapper}>
+      <section className={Style.wrapper} id='about'>
         <img src='images/top/about_bg.svg' alt='' className={Style.bg} />
         <h2 className='en'>About</h2>
         <div className={Style.content}>

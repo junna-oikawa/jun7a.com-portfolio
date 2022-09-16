@@ -19,7 +19,7 @@ const imagesSrc: ImageObj[] = [
 const Works: React.FC = () => {
   return (
     <>
-      <section className={Style.wrapper}>
+      <section className={Style.wrapper} id='works'>
         <h2 className='en'>Works</h2>
         <div className={Style.contents}>
           {imagesSrc.map((img, index) => (
