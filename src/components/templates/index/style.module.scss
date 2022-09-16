@@ -20,12 +20,17 @@ main.main {
 
   @include mq(sp) {
     margin-top: 0;
+    margin-bottom: 100px;
   }
 }
 
 footer.footer {
   margin-top: 200px;
   z-index: 1000;
+
+  @include mq(sp) {
+    margin-bottom: 50px;
+  }
 }
 
 .footer_nav {

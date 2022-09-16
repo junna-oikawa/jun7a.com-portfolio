@@ -17,11 +17,11 @@ const Top: React.FC = () => {
       <main className={Style.main}>
         <MV />
         <Works />
-        {/* <About /> */}
+        <About />
       </main>
-      {/* <footer className={Style.footer}>
+      <footer className={Style.footer}>
         <Footer />
-      </footer> */}
+      </footer>
       <div className={Style.footer_nav}>
         <FooterNav />
       </div>
