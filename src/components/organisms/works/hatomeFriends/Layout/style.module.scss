@@ -22,6 +22,7 @@
       position: absolute;
       top: 0;
       right: 20vw;
+      z-index: -1;
 
       @include mq(sp) {
         right: 5vw;
@@ -33,6 +34,7 @@
       position: absolute;
       bottom: 0;
       left: 20vw;
+      z-index: -1;
 
       @include mq(sp) {
         left: 5vw;
@@ -45,6 +47,9 @@
 
     h2 {
       font-weight: 600;
+
+      @include mq(sp) {
+      }
     }
 
     p {

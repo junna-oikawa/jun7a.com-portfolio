@@ -43,7 +43,7 @@
       color: color.color(2);
 
       @include mq(sp) {
-        font-size: min(2rem, vw.vw(20));
+        font-size: min(2rem, vw.vw(15));
       }
     }
 

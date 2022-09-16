@@ -16,10 +16,13 @@ const images: string[] = [
   'visual_06.JPG',
 ];
 
+const heading: string = 'Screen Shots';
+const kana: string = 'スクリーンショット';
+
 const Visuals: React.FC = () => {
   return (
     <>
-      <Layout>
+      <Layout heading={heading} kana={kana}>
         <div className={Style.wrapper}>
           <div className={Style.swiper_wrapper}>
             <Swiper

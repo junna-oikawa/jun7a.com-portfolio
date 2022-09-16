@@ -29,6 +29,10 @@ body {
 h2 {
   font-size: 3rem;
   font-weight: 400;
+
+  @include mq(sp) {
+    font-size: min(3rem, vw.vw(22));
+  }
 }
 
 h3 {
