@@ -1,0 +1,81 @@
+@use './common/vw-calculator' as vw;
+@import './common/variable';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: ryo-gothic-plusn, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: ryo-gothic-plusn, sans-serif;
+  font-weight: 400;
+  color: #614d40;
+  text-decoration: none;
+  transition: all 1s;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  @include mq(sp) {
+    font-size: min(2.4rem, vw.vw(18));
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @include mq(sp) {
+    font-size: min(1.5rem, vw.vw(12));
+  }
+}
+
+a {
+  color: #614d40;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #614d40;
+  text-decoration: none;
+}
+
+.en {
+  font-family: 'Montserrat Alternates', ryo-gothic-plusn, sans-serif;
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

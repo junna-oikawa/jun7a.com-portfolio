@@ -1,0 +1,21 @@
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .contents {
+    width: min(calc(750px + 2 * 10px), 80%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    @include mq(sp) {
+    }
+  }
+}

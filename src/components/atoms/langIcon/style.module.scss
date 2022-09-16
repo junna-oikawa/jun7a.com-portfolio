@@ -1,0 +1,24 @@
+@use 'styles/common/colors' as color;
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
+
+.wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: color.color(4);
+  border-radius: 20%;
+
+  @include mq(sp) {
+    width: min(60px, vw.vw(50));
+    height: min(60px, vw.vw(50));
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    line-height: 1.2;
+  }
+}

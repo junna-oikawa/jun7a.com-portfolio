@@ -1,0 +1,11 @@
+$colors: (
+  1: #614d40,
+  2: #807066,
+  3: #a0948c,
+  4: #bfb7b2,
+  5: #dfdbd8,
+) !default;
+
+@function color($color: 1) {
+  @return map-get($colors, $color);
+}

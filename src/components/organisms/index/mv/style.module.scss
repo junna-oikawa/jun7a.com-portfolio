@@ -1,0 +1,67 @@
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: relative;
+
+  @include mq(sp) {
+    height: calc(100vh - 100px);
+  }
+
+  img {
+    width: 80vw;
+    height: calc(100vh - 160px);
+    object-fit: cover;
+    object-position: 80% 20%;
+    position: absolute;
+    top: calc((100% - 80px) / 2);
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    @include mq(sp) {
+      width: 70vw;
+      height: 80vh;
+      max-height: 100vw;
+      top: calc(50% - 25px);
+    }
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 500;
+    text-align: right;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    position: absolute;
+    top: calc((100% - 80px) / 2);
+    left: 15vw;
+    transform: translate(0%, -50%);
+
+    @include mq(sp) {
+      font-size: 10vw;
+      text-align: center;
+      top: calc(50% - 25px);
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      text-shadow: 1px 2px 5vw #808080;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: right;
+    position: absolute;
+    bottom: 4vh;
+    right: 6vw;
+
+    @include mq(sp) {
+      font-size: min(4vw, 1.5rem);
+      bottom: 1vh;
+      right: 3vw;
+    }
+  }
+}
