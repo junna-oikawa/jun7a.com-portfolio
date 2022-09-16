@@ -1,9 +1,13 @@
-import Style from './style.module.scss';
-import Head from 'next/head';
-import Image from 'next/image';
-import LangIcon from 'components/atoms/langIcon';
-import GenreIcon from 'components/atoms/GenreIcon';
+import MvLayout from '../../mvLayout';
 
+const title: string = 'はとめふれんず';
+const subtitle: JSX.Element = (
+  <>
+    子どもの創造力を養うための
+    <br />
+    キャラクターWebアプリケーション
+  </>
+);
 const langs: JSX.Element[] = [
   <>
     Java
@@ -24,35 +28,11 @@ const langs: JSX.Element[] = [
   </>,
   <>C#</>,
 ];
+const imgSrc: string = 'hatomeFriends.png';
+const type: string = 'laptop';
 
 const Mv: React.FC = () => {
-  return (
-    <>
-      <section className={Style.wrapper}>
-        <div className={Style.images}>
-          <img src='/images/works/common/bg.svg' className={Style.bg} alt='' />
-          <img src='/images/common/works_icons/hatomeFriends.png' className={Style.main} alt='' />
-        </div>
-        <div className={Style.texts}>
-          <h1>
-            はとめふれんず
-            <br />
-          </h1>
-          <h2>
-            子どもの創造力を養うための
-            <br />
-            キャラクターWebアプリケーション
-          </h2>
-          <div className={Style.grid_wrapper}>
-            <GenreIcon name='Web' />
-            {langs.map((item) => (
-              <LangIcon name={item} />
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
+  return <MvLayout title={title} subtitle={subtitle} langs={langs} imgSrc={imgSrc} type={type} />;
 };
 
 export default Mv;
