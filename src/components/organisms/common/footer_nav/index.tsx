@@ -12,8 +12,8 @@ const FooterNav: React.FC = () => {
   return (
     <>
       <div className={Style.wrapper}>
-        {datas.map((data) => (
-          <div className={Style.icon}>
+        {datas.map((data, index: number) => (
+          <div className={Style.icon} key={index}>
             <FooterNavIcon name={data.name} src={data.src} id={data.id} key={data.id} />
           </div>
         ))}

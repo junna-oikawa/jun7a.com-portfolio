@@ -30,8 +30,8 @@ const MvLayout: React.FC<Props> = ({ title, subtitle, langs, imgSrc, type }: Pro
           <h2>{subtitle}</h2>
           <div className={Style.grid_wrapper}>
             <GenreIcon name='Web' />
-            {langs.map((lang) => (
-              <LangIcon name={lang} />
+            {langs.map((lang, index: number) => (
+              <LangIcon name={lang} key={index} />
             ))}
           </div>
         </div>
