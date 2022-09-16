@@ -3,25 +3,6 @@
 @import 'styles/common/variable';
 
 .wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  .heading {
-    text-align: center;
-
-    h2 {
-      font-weight: 600;
-    }
-
-    p {
-      font-weight: 500;
-    }
-  }
-
   .swiper_wrapper {
     display: flex;
 
