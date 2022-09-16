@@ -6,6 +6,6 @@ $colors: (
   5: #dfdbd8,
 ) !default;
 
-@function color($color: 1) {
+@function color($color) {
   @return map-get($colors, $color);
 }

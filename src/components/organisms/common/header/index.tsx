@@ -1,12 +1,17 @@
 import Style from './style.module.scss';
-const Header: React.FC = () => {
+
+interface Props {
+  isTopPage?: boolean;
+}
+
+const Header: React.FC<Props> = ({ isTopPage }: Props) => {
   return (
     <>
       <div className={Style.wrapper}>
         <div>
-          <img src='images/common/header_logo.png' alt='J' />
+          <img src='/images/common/header_logo.png' alt='J' />
           <h1 className={`en ${Style.logo_en}`}>unna Oikawa</h1>
-          <h1 className={Style.logo_jp}>ゅんな おいかわ</h1>
+          {isTopPage && <h1 className={Style.logo_jp}>ゅんな おいかわ</h1>}
         </div>
         <nav>
           <ul>
