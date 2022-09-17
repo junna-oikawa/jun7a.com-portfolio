@@ -8,12 +8,14 @@ import Link from 'components/organisms/works/Link';
 import TargetPurpose from 'components/organisms/works/hatomeFriends/TargetPurpose';
 import Backgrounds from 'components/organisms/works/hatomeFriends/Backgrounds';
 import Languages from 'components/organisms/works/hatomeFriends/Languages';
+import Movie from 'components/organisms/works/hatomeFriends/Movie';
 
 const HatomeFriendsComponent: React.FC = () => {
   return (
     <Layout>
       <Mv />
       <Link href='https://hatome-friends.herokuapp.com/' />
+      <Movie />
       <Visuals />
       <DescriptionEyelet />
       <DescriptionApp />
