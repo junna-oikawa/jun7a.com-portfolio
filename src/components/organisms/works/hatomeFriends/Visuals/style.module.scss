@@ -3,6 +3,8 @@
 @import 'styles/common/variable';
 
 .wrapper {
+  z-index: -1;
+
   .swiper_wrapper {
     display: flex;
 
