@@ -5,6 +5,9 @@ import Visuals from 'components/organisms/works/hatomeFriends/Visuals';
 import DescriptionEyelet from 'components/organisms/works/hatomeFriends/DescriptionEyelet';
 import DescriptionApp from 'components/organisms/works/hatomeFriends/DescriptionApp';
 import Link from 'components/organisms/works/Link';
+import TargetPurpose from 'components/organisms/works/hatomeFriends/TargetPurpose';
+import Backgrounds from 'components/organisms/works/hatomeFriends/Backgrounds';
+import Languages from 'components/organisms/works/hatomeFriends/Languages';
 
 const HatomeFriendsComponent: React.FC = () => {
   return (
@@ -14,6 +17,9 @@ const HatomeFriendsComponent: React.FC = () => {
       <Visuals />
       <DescriptionEyelet />
       <DescriptionApp />
+      <TargetPurpose />
+      <Backgrounds />
+      <Languages />
     </Layout>
   );
 };

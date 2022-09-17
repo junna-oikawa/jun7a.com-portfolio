@@ -1,0 +1,139 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@import 'styles/common/variable';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  .br_sp {
+    display: none;
+
+    @include mq(sp) {
+      display: block;
+    }
+  }
+
+  .top,
+  .middle,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-weight: 500;
+      color: color.color(3);
+      margin-bottom: 3vw;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    p {
+      font-weight: 500;
+      text-align: center;
+
+      &.emphasis {
+        font-size: 3rem;
+
+        @include mq(sp) {
+          font-size: min(3rem, 4vw);
+          margin-top: 3vw;
+        }
+
+        span {
+          text-decoration-line: underline;
+          text-decoration-style: wavy;
+          text-decoration-color: #5cffe9;
+          text-decoration-thickness: 6px;
+          text-underline-offset: -3px;
+        }
+      }
+
+      &.source {
+        width: fit-content;
+        max-width: 90%;
+        font-size: 1rem;
+        color: color.color(3);
+
+        @include mq(sp) {
+          margin-top: 3vw;
+        }
+
+        a {
+          text-decoration: underline;
+          font-size: 1rem;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    .contents {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mq(sp) {
+        width: 90%;
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+
+        @include mq(sp) {
+          width: 90%;
+        }
+      }
+
+      .left {
+        p {
+          span {
+            color: #54bfad;
+            font-weight: 700;
+          }
+
+          &.etc {
+            writing-mode: vertical-rl;
+          }
+        }
+      }
+
+      .right {
+        border-left: 2px solid color.color(4);
+
+        @include mq(sp) {
+          border-left: none;
+        }
+
+        .graph {
+          width: 120px;
+          position: relative;
+          display: flex;
+          place-items: center;
+
+          img {
+            width: 100%;
+          }
+
+          p {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1.4;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

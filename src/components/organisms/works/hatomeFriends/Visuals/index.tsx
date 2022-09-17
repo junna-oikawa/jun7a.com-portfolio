@@ -34,10 +34,10 @@ const Visuals: React.FC = () => {
               spaceBetween={10}
               slidesPerView={1.2}
               pagination={{
+                clickable: true,
                 el: '#pagination',
                 bulletClass: `swiper-pagination-bullet ${Style.custom_bullet}`,
                 bulletActiveClass: `swiper-pagination-bullet-active ${Style.custom_bullet_active}`,
-                clickable: true,
               }}
               loop={true}
               autoplay={{ delay: 5000 }}

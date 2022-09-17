@@ -1,0 +1,53 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@import 'styles/common/variable';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @include mq(sp) {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 40%;
+
+    @include mq(sp) {
+      width: 60%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right {
+    width: 40%;
+
+    @include mq(sp) {
+      width: 60%;
+    }
+
+    p {
+      font-size: 2rem;
+
+      @include mq(sp) {
+        font-size: min(vw.vw(20), 2rem);
+        line-height: 1.6;
+      }
+
+      &.desc_konva {
+        font-size: 1.5rem;
+        margin-left: 30px;
+        line-height: 1.6;
+
+        @include mq(sp) {
+          font-size: min(vw.vw(15), 1.5rem);
+        }
+      }
+    }
+  }
+}
