@@ -56,6 +56,12 @@ p {
 a {
   color: #614d40;
   text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @include mq(sp) {
+    font-size: min(1.5rem, vw.vw(12));
+  }
 }
 
 a:hover {

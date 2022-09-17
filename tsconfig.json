@@ -16,7 +16,7 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"]
-    },, "src/components/organisms/works/hatomeFriends/Visual, "src/components/organisms/works/hatomeFriends/Mv"s"
+    },
     "baseUrl": "src"
   },
   "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],
