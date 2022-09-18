@@ -9,6 +9,7 @@ import TargetPurpose from 'components/organisms/works/hatomeFriends/TargetPurpos
 import Backgrounds from 'components/organisms/works/hatomeFriends/Backgrounds';
 import Languages from 'components/organisms/works/hatomeFriends/Languages';
 import Movie from 'components/organisms/works/hatomeFriends/Movie';
+import Development from 'components/organisms/works/hatomeFriends/Development';
 
 const HatomeFriendsComponent: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const HatomeFriendsComponent: React.FC = () => {
       <TargetPurpose />
       <Backgrounds />
       <Languages />
+      <Development />
     </Layout>
   );
 };

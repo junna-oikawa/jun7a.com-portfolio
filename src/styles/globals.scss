@@ -37,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
 
   @include mq(sp) {
     font-size: min(2.4rem, vw.vw(18));
@@ -49,7 +49,7 @@ p {
   font-weight: 400;
 
   @include mq(sp) {
-    font-size: min(1.5rem, vw.vw(12));
+    font-size: min(1.5rem, vw.vw(15));
   }
 }
 
