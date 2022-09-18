@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <body>
+    <pre>
+      <code>
+<p>
+// 回転角度、回転方向を返す関数
+function calcAngle(mousePos) {
+<span class="space">  </span>let vectorA = {
+<span class="space">    </span>x: mousedownPos.x - axis.x,
+<span class="space">    </span>y: mousedownPos.y - axis.y,
+<span class="space">  </span>};
+
+<span class="space">  </span>let vectorC = {
+<span class="space">    </span>x: mousePos.x - axis.x,
+<span class="space">    </span>y: mousePos.y - axis.y,
+<span class="space">  </span>};
+
+<span class="space">  </span>let numerator = vectorA.x * vectorC.x + vectorA.y * vectorC.y;
+
+<span class="space">  </span>let denominator =
+<span class="space">    </span>Math.sqrt(vectorA.x ** 2 + vectorA.y ** 2) <br class="br_sp"/><span class="space_sp">    </span>* Math.sqrt(vectorC.x ** 2 + vectorC.y ** 2);
+
+<span class="space">  </span>let innerProduct = numerator / denominator;
+
+<span class="space">  </span><span class="emphasis">innerProduct > 1 ? (innerProduct = 1) : (innerProduct = -1);</span>
+
+<span class="space">  </span>let radian = Math.acos(innerProduct);
+<span class="space">  </span>let absAngle = (radian * 180) / Math.PI;
+<span class="space">  </span>let s = vectorA.x * vectorC.y - vectorA.y * vectorC.x;
+<span class="space">  </span>let direction = 1;
+
+<span class="space">  </span>// 回転方向を算出
+<span class="space">  </span><span class="emphasis">s > 0 ? (direction = 1) : (direction = -1);</span>
+
+<span class="space">  </span>return direction * absAngle;
+}
+
+// 図形を回転させる関数
+function rotateObj(paramRotObj, ang) {
+<span class="space">  </span>for (let i = 0; i < paramRotObj.length; i++) {
+<span class="space">    </span>let obj = paramRotObj[i];
+<span class="space">    </span>let r = ((obj.initRot + ang) / 180) * Math.PI;
+
+<span class="space">    </span><span class="emphasis">obj.obj.x(axis.x + (obj.horPosX - axis.x) * Math.cos(r) <br class="br_sp"/><span class="space_sp">      </span>- (obj.horPosY - axis.y) * Math.sin(r));</span>
+
+<span class="space">    </span><span class="emphasis">obj.obj.y(axis.y + (obj.horPosX - axis.x) * Math.sin(r) <br class="br_sp"/><span class="space_sp">      </span>+ (obj.horPosY - axis.y) * Math.cos(r));</span>
+<span class="space">    </span>obj.obj.rotation(obj.initRot + ang);
+<span class="space">  </span>}
+}
+  
+</p>
+      </code>
+    </pre>
+  </body>
+</html>

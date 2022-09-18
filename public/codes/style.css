@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  background-color: #807066;
+}
+
+p {
+  color: #bfb7b2;
+  padding: 20px;
+  margin: 0;
+}
+
+.space {
+  letter-spacing: 0.5em;
+}
+
+.space_sp {
+  display: none;
+  letter-spacing: 0.5em;
+}
+
+.emphasis {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.br_sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 10px;
+    padding: 3px;
+  }
+
+  .br_sp {
+    display: block;
+  }
+
+  .space_sp {
+    display: inline;
+  }
+}

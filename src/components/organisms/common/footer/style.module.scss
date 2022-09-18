@@ -1,0 +1,25 @@
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
+
+.wrapper {
+  height: calc(25000 / 1488) + vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  p {
+    color: #fff;
+
+    @include mq(sp) {
+      font-size: min(1.5rem, 3.2vw);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable.scss';
+
+.wrapper {
+  width: 100vw;
+  height: 50px;
+  padding: 5px 20px;
+  background-color: #fff;
+  display: flex;
+
+  .icon {
+    width: calc(100% / 4);
+    height: 100%;
+  }
+}

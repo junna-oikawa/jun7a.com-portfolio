@@ -1,0 +1,29 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@import 'styles/common/variable';
+
+.wrapper {
+  .br_sp {
+    display: none;
+
+    @include mq(sp) {
+      display: block;
+    }
+  }
+
+  p {
+    span {
+      margin-top: 10px;
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
+  img {
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    border-radius: 20px;
+  }
+}

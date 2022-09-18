@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+$breakpoints: (
+  's': 'screen and (min-width: 480px)',
+  'sp': 'screen and (max-width: 767px)',
+  'm': 'screen and (min-width: 768px)',
+  'tablet': 'screen and (max-width: 1023px)',
+  'l': 'screen and (min-width: 1024px)',
+  'xl': 'screen and (min-width: 1280px)',
+  'xxl': 'screen and (min-width: 1440px)',
+) !default;
+
+@mixin mq($breakpoint: m) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+$colors: (
+  1: #614d40,
+  2: #807066,
+  3: #a0948c,
+  4: #bfb7b2,
+  5: #dfdbd8,
+) !default;
+
+@function color($color: 1) {
+  @return map-get($colors, $color);
+}

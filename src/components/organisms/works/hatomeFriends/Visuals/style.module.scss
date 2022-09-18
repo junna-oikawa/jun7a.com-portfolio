@@ -1,0 +1,33 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@import 'styles/common/variable';
+
+.wrapper {
+  z-index: -1;
+
+  .swiper_wrapper {
+    display: flex;
+
+    .swiper {
+      width: 50vw;
+
+      @include mq(sp) {
+        width: 90vw;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .swiper_pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    span {
+      background: color.color(1);
+    }
+  }
+}

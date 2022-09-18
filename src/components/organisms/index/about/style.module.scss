@@ -1,0 +1,106 @@
+@use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 120px 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(sp) {
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  img.bg {
+    width: 700px;
+    opacity: 0.25;
+    position: absolute;
+    z-index: -1;
+
+    @include mq(sp) {
+      width: min(920px, vw.vw(700));
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include mq(sp) {
+      flex-direction: column;
+    }
+
+    .left {
+      width: 230px;
+      height: 230px;
+
+      @include mq(sp) {
+        width: vw.vw(140);
+        height: vw.vw(140);
+      }
+
+      .profile_wrapper {
+        width: 250px;
+        mask-image: url('/images/top/about_profile.svg');
+        mask-size: 250px;
+        mask-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+
+        @include mq(sp) {
+          width: vw.vw(150);
+          mask-size: vw.vw(150);
+        }
+
+        img {
+          width: 230px;
+          height: 220px;
+          transform: translate(10px, 0);
+
+          @include mq(sp) {
+            object-fit: contain;
+            width: vw.vw(135);
+            height: vw.vw(140);
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h3 {
+        font-weight: 400;
+      }
+
+      p {
+        line-height: 1.4;
+      }
+
+      .grid_wrapper {
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(sp) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

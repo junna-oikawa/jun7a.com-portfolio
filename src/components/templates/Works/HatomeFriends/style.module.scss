@@ -1,0 +1,44 @@
+@use 'styles/common/vw-calculator.scss' as vw;
+@import 'styles/common/variable.scss';
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  @include mq(sp) {
+    position: static;
+  }
+}
+
+main.main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+
+  @include mq(sp) {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+}
+
+footer.footer {
+  margin-top: 200px;
+  z-index: 1000;
+
+  @include mq(sp) {
+    margin-bottom: 50px;
+  }
+}
+
+.footer_nav {
+  display: none;
+
+  @include mq(sp) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
+}
