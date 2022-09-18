@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <body>
+    <pre>
+      <code>
+<p>
+function calc(polygon) {
+<span class="space">  </span>let n = 0;
+<span class="space">  </span>centX = 0;
+<span class="space">  </span>centY = 0;
+<span class="space">  </span>polygon[polygon.length] = polygon[0];
+<span class="space">  </span>for(var j = 0; j < height; j++) {
+<span class="space">  </span><span class="space">  </span>for(var i = 0; i < width; i++) {
+<span class="space">  </span><span class="space">  </span><span class="space">  </span>if (cn(polygon, i, j) == true) {
+<span class="space">  </span><span class="space">  </span><span class="space">  </span>centX += i;
+<span class="space">  </span><span class="space">  </span><span class="space">  </span>centY += j;
+<span class="space">  </span><span class="space">  </span><span class="space">  </span>n++;
+<span class="space">  </span><span class="space">  </span><span class="space">  </span>}
+<span class="space">  </span><span class="space">  </span>}
+<span class="space">  </span>}
+<span class="space">  </span><span class="emphasis">centX /= n;</span>
+<span class="space">  </span><span class="emphasis">centY /= n;</span>
+<span class="space">  </span>drawCross(centX, centY);
+}
+</p>
+      </code>
+    </pre>
+  </body>
+</html>

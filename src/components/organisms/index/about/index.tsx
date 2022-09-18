@@ -1,6 +1,4 @@
 import Style from './style.module.scss';
-import Head from 'next/head';
-import Image from 'next/image';
 import LangIcon from 'components/atoms/langIcon';
 
 const langs: JSX.Element[] = [
@@ -60,8 +58,8 @@ const About: React.FC = () => {
               システムデザイン研究科インダストリアルアート学域 在学中
             </p>
             <div className={Style.grid_wrapper}>
-              {langs.map((item) => (
-                <LangIcon name={item} />
+              {langs.map((item, index) => (
+                <LangIcon name={item} key={index} />
               ))}
             </div>
           </div>

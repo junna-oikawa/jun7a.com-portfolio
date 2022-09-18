@@ -1,5 +1,5 @@
-import FooterNavIcon from 'components/atoms/FooterNavIcon';
 import Style from './style.module.scss';
+import FooterNavIcon from 'components/atoms/FooterNavIcon';
 
 const datas = [
   { name: 'top', src: 'nav_top.svg', id: 'top' },
@@ -12,9 +12,14 @@ const FooterNav: React.FC = () => {
   return (
     <>
       <div className={Style.wrapper}>
-        {datas.map((data) => (
-          <div className={Style.icon}>
-            <FooterNavIcon name={data.name} src={data.src} id={data.id} key={data.id} />
+        {datas.map((data, index: number) => (
+          <div className={Style.icon} key={index}>
+            <FooterNavIcon
+              name={data.name}
+              src={data.src}
+              id={data.id}
+              key={data.id}
+            />
           </div>
         ))}
       </div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <pre>
+      <code>
+let maxDistance = 0;
+let useEyelet;
+// eyeletIdには、クリックした要素に付いている全てのハトメのidが格納されている
+for (let i = 0; i < eyeletId.length; i++) {
+<span class="space">  </span>// 画面上から対象idのハトメを取得する
+<span class="space">  </span>let eyelet = stage.findOne('#' + eyeletId[i]);
+<span class="space">  </span>let thisEyeletPos = eyelet.getAbsolutePosition();
+<span class="space">  </span>let distance =
+<span class="space">  </span><span class="space">  </span>Math.sqrt((thisEyeletPos.x - mousePos.x) ** 2 + (thisEyeletPos.y - mousePos.y) ** 2);
+<span class="space">  </span>if (distance > maxDistance) {
+<span class="space">  </span><span class="space">  </span>maxDistance = distance;
+<span class="space">  </span><span class="space">  </span>axis = thisEyeletPos;
+<span class="space">  </span><span class="space">  </span>useEyelet = eyelet;
+<span class="space">  </span>}
+}
+      </code>
+    </pre>
+  </body>
+</html>

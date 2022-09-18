@@ -1,0 +1,17 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@import 'styles/common/variable';
+
+.wrapper {
+  .iframe {
+    iframe {
+      width: 60vw;
+      height: calc(315 * 60vw / 560);
+
+      @include mq(sp) {
+        width: 80vw;
+        height: calc(315 * 80vw / 560);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@import 'styles/common/variable';
+
+.wrapper {
+  width: min(100%, 860px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 60px;
+  column-gap: 10px;
+
+  @include mq(sp) {
+    width: auto;
+    flex-direction: column;
+    row-gap: 10vw;
+  }
+
+  .card {
+    width: min(30vw, 280px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(sp) {
+      width: auto;
+    }
+
+    img {
+      height: 100px;
+
+      @include mq(sp) {
+        margin-top: 2vw;
+        height: min(150px, 30vw);
+      }
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}

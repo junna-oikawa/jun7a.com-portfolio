@@ -12,7 +12,7 @@ const FooterNavIcon: React.FC<Props> = ({ src, name, id }: Props) => {
   return (
     <Scroll to={id} smooth={true} offset={-50}>
       <div className={Style.wrapper}>
-        <img src={`images/common/nav_icons/${src}`} alt='' />
+        <img src={`/images/common/nav_icons/${src}`} alt='' />
         <p>{name}</p>
       </div>
     </Scroll>

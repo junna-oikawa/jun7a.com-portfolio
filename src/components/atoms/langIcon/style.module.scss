@@ -20,5 +20,9 @@
   p {
     text-align: center;
     line-height: 1.2;
+
+    @include mq(sp) {
+      font-size: min(1.5rem, 3.2vw);
+    }
   }
 }

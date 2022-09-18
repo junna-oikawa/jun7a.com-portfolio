@@ -1,5 +1,5 @@
-@use 'styles/common/variable';
 @use 'styles/common/vw-calculator' as vw;
+@import 'styles/common/variable';
 
 .wrapper {
   height: calc(25000 / 1488) + vw;
@@ -17,5 +17,9 @@
 
   p {
     color: #fff;
+
+    @include mq(sp) {
+      font-size: min(1.5rem, 3.2vw);
+    }
   }
 }

@@ -1,13 +1,30 @@
-import Style from './style.module.scss';
-import Head from 'next/head';
-import Image from 'next/image';
+//import Style from './style.module.scss';
+import Link from 'components/organisms/works/Link';
+import Backgrounds from 'components/organisms/works/hatomeFriends/Backgrounds';
+import DescriptionApp from 'components/organisms/works/hatomeFriends/DescriptionApp';
+import DescriptionEyelet from 'components/organisms/works/hatomeFriends/DescriptionEyelet';
+import Development from 'components/organisms/works/hatomeFriends/Development';
+import Languages from 'components/organisms/works/hatomeFriends/Languages';
+import Movie from 'components/organisms/works/hatomeFriends/Movie';
+import Mv from 'components/organisms/works/hatomeFriends/Mv';
+import TargetPurpose from 'components/organisms/works/hatomeFriends/TargetPurpose';
+import Visuals from 'components/organisms/works/hatomeFriends/Visuals';
+import Layout from 'components/templates/layout';
 
 const HatomeFriendsComponent: React.FC = () => {
   return (
-    <>
-      <p>はとめふれんず</p>
-      <p>コンポーネント</p>
-    </>
+    <Layout>
+      <Mv />
+      <Link href='https://hatome-friends.herokuapp.com/' />
+      <Movie />
+      <Visuals />
+      <DescriptionEyelet />
+      <DescriptionApp />
+      <TargetPurpose />
+      <Backgrounds />
+      <Languages />
+      <Development />
+    </Layout>
   );
 };
 
