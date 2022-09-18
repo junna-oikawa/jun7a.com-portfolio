@@ -30,11 +30,9 @@ const Development: React.FC = () => {
                     内判定が出たもピクセルの個数と、各点のx座標、y座標から重心を計算し、その座標にハトメを作成する。
                   </p>
                 </div>
-                <iframe
-                  className={Style.right}
-                  src='https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=zenburn&wt=none&l=auto&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=function%2520calc%28polygon%29%2520%257B%250A%2520let%2520n%2520%253D%25200%253B%250A%2520centX%2520%253D%25200%253B%250A%2520centY%2520%253D%25200%253B%250A%2520polygon%255Bpolygon.length%255D%2520%253D%2520polygon%255B0%255D%253B%250A%2520for%28var%2520j%2520%253D%25200%253B%2520j%2520%253C%2520height%253B%2520j%252B%252B%29%2520%257B%250A%2520%2520%2520for%28var%2520i%2520%253D%25200%253B%2520i%2520%253C%2520width%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520if%2520%28cn%28polygon%252C%2520i%252C%2520j%29%2520%253D%253D%2520true%29%2520%257B%250A%2520%2520%2520%2520%2520centX%2520%252B%253D%2520i%253B%250A%2520%2520%2520%2520%2520centY%2520%252B%253D%2520j%253B%250A%2520%2520%2520%2520%2520n%252B%252B%253B%250A%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%257D%250A%2520%257D%250A%2520centX%2520%252F%253D%2520n%253B%250A%2520centY%2520%252F%253D%2520n%253B%250A%2520%250A%2520%252F%252F%2520%25E3%2581%25AF%25E3%2581%25A8%25E3%2582%2581%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E9%2596%25A2%25E6%2595%25B0%25E3%2581%25B8%25E5%25BA%25A7%25E6%25A8%2599%25E3%2582%2592%25E6%25B8%25A1%25E3%2581%2599%250A%2520drawEyelet%28centX%252C%2520centY%29%253B%250A%257D'
-                  sandbox='allow-scripts allow-same-origin'
-                ></iframe>
+                <div className={Style.right}>
+                  <iframe src='/codes/hatomeFriends/func01.html'></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -46,11 +44,8 @@ const Development: React.FC = () => {
             <div className={Style.content}>
               <div className={Style.desc3}>
                 <img src='/images/works/hatomeFriends/process_03.jpg' />
-                <p>パーツに複数ハトメがついている場合、マウスから一番遠いものを選択</p>
-                <iframe
-                  src='https://carbon.now.sh/embed/4pXvGkwZru30HYAViDpj'
-                  sandbox='allow-scripts allow-same-origin'
-                ></iframe>
+                <p>パーツに複数ハトメがついている場合、マウスから一番遠いものが基準となる。</p>
+                <iframe src='/codes/hatomeFriends/func02.html'></iframe>
               </div>
             </div>
           </div>
@@ -67,10 +62,8 @@ const Development: React.FC = () => {
                   <br />
                   動かされるたびに各パーツに対して座標計算を行う。
                 </p>
-                <iframe
-                  src='https://carbon.now.sh/embed/QVt8HUDDRDXiytgavFsO'
-                  sandbox='allow-scripts allow-same-origin'
-                ></iframe>
+                <iframe src='/codes/hatomeFriends/func03.html'></iframe>
+                <p>※可読性のため実際のコードと改行位置などを変更しています。</p>
               </div>
             </div>
           </div>

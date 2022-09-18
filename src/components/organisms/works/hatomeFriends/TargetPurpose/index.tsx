@@ -11,7 +11,11 @@ const TargetPurpose: React.FC = () => {
         </div>
         <div className={Style.right}>
           <Layout heading='Purpose' kana='目的'>
-            <p>はとめふれんずで遊ぶことで創造力が養われること</p>
+            <p>
+              はとめふれんずで遊ぶことで
+              <br className={Style.br_sp} />
+              創造力が養われること
+            </p>
             <p>デジタルデバイスを用いて創造力を養うこと</p>
           </Layout>
         </div>

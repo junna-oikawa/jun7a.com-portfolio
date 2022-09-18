@@ -12,6 +12,14 @@
     gap: 200px;
   }
 
+  .br_sp {
+    display: none;
+
+    @include mq(sp) {
+      display: block;
+    }
+  }
+
   .left,
   .right {
     width: 50%;
@@ -26,6 +34,14 @@
 
     @include mq(sp) {
       border-right: none;
+    }
+  }
+
+  .right {
+    p {
+      @include mq(sp) {
+        text-align: center;
+      }
     }
   }
 }

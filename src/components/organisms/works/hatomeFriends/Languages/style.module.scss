@@ -16,7 +16,7 @@
     width: 40%;
 
     @include mq(sp) {
-      width: 60%;
+      width: 80%;
     }
 
     img {
@@ -28,7 +28,7 @@
     width: 40%;
 
     @include mq(sp) {
-      width: 60%;
+      width: 80%;
     }
 
     p {
@@ -40,12 +40,18 @@
       }
 
       &.desc_konva {
+        padding: 20px;
+        margin-top: 20px;
         font-size: 1.5rem;
-        margin-left: 30px;
         line-height: 1.6;
+        border: 2px solid color.color(4);
+        border-radius: 20px;
 
         @include mq(sp) {
+          padding: 5vw;
+          margin-top: 6vw;
           font-size: min(vw.vw(15), 1.5rem);
+          border-radius: 4vw;
         }
       }
     }

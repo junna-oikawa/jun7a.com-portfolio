@@ -14,7 +14,9 @@ const Backgrounds: React.FC = () => {
               ６歳児　５５．１分
             </p>
             <p className={Style.emphasis}>
-              子どもにとってデジタルデバイスは<span>身近な存在</span>
+              子どもにとってデジタルデバイスは
+              <br className={Style.br_sp} />
+              <span>身近な存在</span>
             </p>
           </div>
           <div className={Style.middle}>
@@ -73,7 +75,8 @@ const Backgrounds: React.FC = () => {
               </div>
             </div>
             <p className={Style.emphasis}>
-              親・社会から「<span>創造力</span>」が望まれている
+              親・社会から
+              <br className={Style.br_sp} />「<span>創造力</span>」が望まれている
             </p>
             <p className={Style.source}>
               <span>出典：</span>

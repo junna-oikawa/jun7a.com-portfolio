@@ -34,10 +34,12 @@
       text-align: center;
 
       &.emphasis {
+        margin-top: 10px;
         font-size: 3rem;
+        line-height: 1.4;
 
         @include mq(sp) {
-          font-size: min(3rem, 4vw);
+          font-size: min(3rem, vw.vw(20));
           margin-top: 3vw;
         }
 
@@ -52,12 +54,14 @@
 
       &.source {
         width: fit-content;
-        max-width: 90%;
+        max-width: 80%;
+        margin-top: 10px;
         font-size: 1rem;
         color: color.color(3);
 
         @include mq(sp) {
           margin-top: 3vw;
+          text-align: left;
         }
 
         a {
@@ -79,6 +83,7 @@
       @include mq(sp) {
         width: 90%;
         flex-direction: column;
+        gap: 10vw;
       }
 
       .left,
@@ -111,6 +116,12 @@
 
         @include mq(sp) {
           border-left: none;
+        }
+
+        p {
+          @include mq(sp) {
+            line-height: 1.8;
+          }
         }
 
         .graph {
