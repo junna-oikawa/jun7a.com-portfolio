@@ -1,5 +1,6 @@
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+// eslint-disable-next-line
 import 'swiper/css';
 import Layout from '../Layout';
 import Style from './style.module.scss';
