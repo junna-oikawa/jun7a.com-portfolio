@@ -1,5 +1,5 @@
-import Style from './style.module.scss';
 import Layout from '../Layout';
+import Style from './style.module.scss';
 const Backgrounds: React.FC = () => {
   return (
     <>
@@ -36,6 +36,7 @@ const Backgrounds: React.FC = () => {
               <a
                 href='https://www8.cao.go.jp/youth/youth-harm/chousa/h28/net-jittai_child/pdf/gaiyo.pdf'
                 target='_blank'
+                rel='noreferrer'
               >
                 https://www8.cao.go.jp/youth/youth-harm/chousa/h28/net-jittai_child/pdf/gaiyo.pdf
               </a>
@@ -54,7 +55,7 @@ const Backgrounds: React.FC = () => {
                 <p>
                   １位　<span>発想力</span> ( 想像力 )　６３．１％
                   <br />
-                  ２位　<span>チャレンジ精神</span>　 ４５．７％
+                  ２位　<span>チャレンジ精神</span>　４５．７％
                 </p>
                 <p className={Style.etc}>…</p>
               </div>
@@ -76,13 +77,18 @@ const Backgrounds: React.FC = () => {
             </div>
             <p className={Style.emphasis}>
               親・社会から
-              <br className={Style.br_sp} />「<span>創造力</span>」が望まれている
+              <br className={Style.br_sp} />「<span>創造力</span>
+              」が望まれている
             </p>
             <p className={Style.source}>
               <span>出典：</span>
               wacom，2019，「AI（人工知能）が発達しても活躍できる仕事は？」，ワコムタブレットサイト，(2022
               年 1 月 15 日取得，
-              <a href='https://tablet.wacom.co.jp/article/future-job-survey' target='_blank'>
+              <a
+                href='https://tablet.wacom.co.jp/article/future-job-survey'
+                target='_blank'
+                rel='noreferrer'
+              >
                 https://tablet.wacom.co.jp/article/future-job-survey
               </a>
               )
@@ -91,6 +97,7 @@ const Backgrounds: React.FC = () => {
               <a
                 href='https://warp.da.ndl.go.jp/info:ndljp/pid/281883/www.meti.go.jp/press/20070312001/jinzaizou-point.p-r.pdf'
                 target='_blank'
+                rel='noreferrer'
               >
                 https://warp.da.ndl.go.jp/info:ndljp/pid/281883/www.meti.go.jp/press/20070312001/jinzaizou-point.p-r.pdf
               </a>

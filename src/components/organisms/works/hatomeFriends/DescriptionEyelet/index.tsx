@@ -1,5 +1,5 @@
-import Style from './style.module.scss';
 import Layout from '../Layout';
+import Style from './style.module.scss';
 const DescriptionEyelet: React.FC = () => {
   return (
     <>
@@ -11,7 +11,9 @@ const DescriptionEyelet: React.FC = () => {
             環状の金具のついたもの。
             <br />
             また、その金具 鳩の目に似ているところからいう。
-            <span>出典：編 小学館(2006) 『精選版　日本国語大辞典』第二版，小学館．</span>
+            <span>
+              出典：編 小学館(2006) 『精選版　日本国語大辞典』第二版，小学館．
+            </span>
           </p>
           <img src='/images/works/hatomeFriends/eyelet.jpg' alt='' />
         </div>

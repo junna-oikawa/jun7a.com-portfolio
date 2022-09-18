@@ -12,7 +12,10 @@ const Link: React.FC<Props> = ({ href }: Props) => {
         <div className={Style.wrapper}>
           <a href={href} target='_brank' className='en'>
             {href}
-            <img src='/images/works/common/open_in_new.svg' alt='別タブでアプリを開く' />
+            <img
+              src='/images/works/common/open_in_new.svg'
+              alt='別タブでアプリを開く'
+            />
           </a>
         </div>
       </Layout>

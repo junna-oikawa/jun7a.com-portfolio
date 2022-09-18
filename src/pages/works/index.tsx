@@ -1,6 +1,5 @@
-import Top from 'components/templates/index';
-import Works from 'components/templates/Works/index';
 import type { NextPage } from 'next';
+import Works from 'components/templates/Works/index';
 
 const Home: NextPage = () => {
   return <Works />;

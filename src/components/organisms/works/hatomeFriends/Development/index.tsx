@@ -1,6 +1,5 @@
-import Style from './style.module.scss';
 import Layout from '../Layout';
-import Script from 'next/script';
+import Style from './style.module.scss';
 
 const Development: React.FC = () => {
   return (
@@ -39,12 +38,16 @@ const Development: React.FC = () => {
           <div className={Style.feature}>
             <div className={Style.heading}>
               <h3>2. ハトメ選定機能</h3>
-              <p>パーツを操作する際回転基準となるハトメについて、以下の関数を実装した。</p>
+              <p>
+                パーツを操作する際回転基準となるハトメについて、以下の関数を実装した。
+              </p>
             </div>
             <div className={Style.content}>
               <div className={Style.desc3}>
                 <img src='/images/works/hatomeFriends/process_03.jpg' />
-                <p>パーツに複数ハトメがついている場合、マウスから一番遠いものが基準となる。</p>
+                <p>
+                  パーツに複数ハトメがついている場合、マウスから一番遠いものが基準となる。
+                </p>
                 <iframe src='/codes/hatomeFriends/func02.html'></iframe>
               </div>
             </div>
@@ -52,7 +55,9 @@ const Development: React.FC = () => {
           <div className={Style.feature}>
             <div className={Style.heading}>
               <h3>3. ハトメで動かす機能1</h3>
-              <p>ハトメを中心として図形を回転させるために、以下の関数を実装した。</p>
+              <p>
+                ハトメを中心として図形を回転させるために、以下の関数を実装した。
+              </p>
             </div>
             <div className={Style.content}>
               <div className={Style.desc3}>

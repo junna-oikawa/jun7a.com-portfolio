@@ -1,6 +1,6 @@
-import Style from './style.module.scss';
-import Layout from '../Layout';
 import { ReactNode } from 'react';
+import Layout from '../Layout';
+import Style from './style.module.scss';
 
 interface Item {
   desc: ReactNode;

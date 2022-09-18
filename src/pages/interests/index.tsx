@@ -1,5 +1,5 @@
-import InterestsComponent from 'components/templates/Interests';
 import type { NextPage } from 'next';
+import InterestsComponent from 'components/templates/Interests';
 
 const Interests: NextPage = () => {
   return <InterestsComponent />;

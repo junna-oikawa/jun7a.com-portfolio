@@ -1,6 +1,6 @@
 import MvLayout from '../../mvLayout';
 
-const title: string = 'はとめふれんず';
+const title = 'はとめふれんず';
 const subtitle: JSX.Element = (
   <>
     子どもの創造力を養うための
@@ -28,11 +28,19 @@ const langs: JSX.Element[] = [
   </>,
   <>C#</>,
 ];
-const imgSrc: string = 'hatomeFriends.png';
-const type: string = 'laptop';
+const imgSrc = 'hatomeFriends.png';
+const type = 'laptop';
 
 const Mv: React.FC = () => {
-  return <MvLayout title={title} subtitle={subtitle} langs={langs} imgSrc={imgSrc} type={type} />;
+  return (
+    <MvLayout
+      title={title}
+      subtitle={subtitle}
+      langs={langs}
+      imgSrc={imgSrc}
+      type={type}
+    />
+  );
 };
 
 export default Mv;

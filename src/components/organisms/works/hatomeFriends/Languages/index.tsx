@@ -1,9 +1,12 @@
-import Style from './style.module.scss';
 import Layout from '../Layout';
+import Style from './style.module.scss';
 const Languages: React.FC = () => {
   return (
     <>
-      <Layout heading='Languages Framework Library' kana='使用言語/フレームワーク/ライブラリ'>
+      <Layout
+        heading='Languages Framework Library'
+        kana='使用言語/フレームワーク/ライブラリ'
+      >
         <div className={Style.wrapper}>
           <div className={Style.left}>
             <img src='/images/works/hatomeFriends/langs.jpg' alt='' />

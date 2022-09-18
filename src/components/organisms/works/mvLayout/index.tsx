@@ -1,6 +1,6 @@
 import Style from './style.module.scss';
-import LangIcon from 'components/atoms/langIcon';
 import GenreIcon from 'components/atoms/GenreIcon';
+import LangIcon from 'components/atoms/langIcon';
 
 interface Props {
   title: string;
@@ -10,7 +10,13 @@ interface Props {
   type: string;
 }
 
-const MvLayout: React.FC<Props> = ({ title, subtitle, langs, imgSrc, type }: Props) => {
+const MvLayout: React.FC<Props> = ({
+  title,
+  subtitle,
+  langs,
+  imgSrc,
+  type,
+}: Props) => {
   return (
     <>
       <section className={Style.wrapper}>

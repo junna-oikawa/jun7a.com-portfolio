@@ -1,9 +1,9 @@
+import { ReactNode } from 'react';
 import Style from './style.module.scss';
-import Header from 'components/organisms/common/header';
+import HeadComponent from 'components/atoms/HeadComponent';
 import Footer from 'components/organisms/common/footer';
 import FooterNav from 'components/organisms/common/footer_nav';
-import HeadComponent from 'components/atoms/HeadComponent';
-import { ReactNode } from 'react';
+import Header from 'components/organisms/common/header';
 
 interface Props {
   children: ReactNode;

@@ -1,6 +1,6 @@
 import Style from './style.module.scss';
-import WorksIcon from 'components/atoms/worksIcon';
 import MoreButton from 'components/atoms/moreButton';
+import WorksIcon from 'components/atoms/worksIcon';
 
 interface ImageObj {
   src: string;

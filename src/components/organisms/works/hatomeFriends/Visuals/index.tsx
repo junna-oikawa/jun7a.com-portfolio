@@ -1,9 +1,7 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
-import 'swiper/css';
-
-import Style from './style.module.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Layout from '../Layout';
+import Style from './style.module.scss';
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
@@ -16,8 +14,8 @@ const images: string[] = [
   'visual_06.JPG',
 ];
 
-const heading: string = 'Screen Shots';
-const kana: string = 'スクリーンショット';
+const heading = 'Screen Shots';
+const kana = 'スクリーンショット';
 
 const Visuals: React.FC = () => {
   return (
@@ -44,7 +42,7 @@ const Visuals: React.FC = () => {
               centeredSlides={true}
               className={Style.swiper}
             >
-              {images.map((src: string, index: number) => {
+              {images.map((src, index: number) => {
                 return (
                   <SwiperSlide key={index}>
                     <img src={`/images/works/hatomeFriends/${src}`} alt='' />
