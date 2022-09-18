@@ -60,7 +60,7 @@ const Development: React.FC = () => {
               </p>
             </div>
             <div className={Style.content}>
-              <div className={Style.desc3}>
+              <div className={Style.desc4}>
                 <img src='/images/works/hatomeFriends/process_05.jpg' />
                 <p>
                   ハトメとカーソルの位置から、回転角度と回転方向を算出する。
@@ -80,7 +80,7 @@ const Development: React.FC = () => {
               </p>
             </div>
             <div className={Style.content}>
-              <div className={Style.desc4}>
+              <div className={Style.desc5}>
                 <div className={Style.top}>
                   <img src='/images/works/hatomeFriends/process_07.jpg' />
                   <p>

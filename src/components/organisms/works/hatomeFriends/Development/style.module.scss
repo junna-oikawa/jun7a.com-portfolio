@@ -93,6 +93,10 @@
             width: 100%;
             height: 100%;
             border: 0;
+
+            @include mq(sp) {
+              height: 363px;
+            }
           }
         }
       }
@@ -112,16 +116,42 @@
         }
 
         iframe {
-          width: 800px;
+          width: 80%;
           height: 400px;
 
           @include mq(sp) {
             width: 100%;
+            height: 348px;
           }
         }
       }
 
       .desc4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 60%;
+        }
+
+        hr {
+          width: 60%;
+        }
+
+        iframe {
+          width: 80%;
+          height: 940px;
+
+          @include mq(sp) {
+            width: 100%;
+            height: 813px;
+          }
+        }
+      }
+
+      .desc5 {
         display: flex;
         flex-direction: column;
         align-items: center;
