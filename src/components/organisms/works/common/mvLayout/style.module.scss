@@ -28,7 +28,7 @@
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: min(4rem, vw.vw(40, 1440));
       line-height: 1.35;
 
       @include mq(sp) {
@@ -37,7 +37,7 @@
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: min(2rem, vw.vw(30, 1440));
       font-weight: 500;
       line-height: 1.4;
       color: color.color(2);
@@ -92,6 +92,14 @@
 
       &.laptop {
         right: -8vw;
+
+        @include mq(sp) {
+          right: -11vw;
+        }
+      }
+
+      &.desktop {
+        right: -7vw;
 
         @include mq(sp) {
           right: -11vw;
