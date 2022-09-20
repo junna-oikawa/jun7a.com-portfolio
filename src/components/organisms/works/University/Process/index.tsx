@@ -22,11 +22,14 @@ const images = [
 ];
 
 const Process: React.FC = () => {
-  let modalIsOpen: boolean[] = [];
-  let setIsOpen: any[] = [];
-  for (let i = 0; i < images.length; i++) {
-    [modalIsOpen[i], setIsOpen[i]] = React.useState(false);
-  }
+  const modalIsOpen: boolean[] = [];
+  const setIsOpen: any[] = [];
+  [modalIsOpen[0], setIsOpen[0]] = React.useState(false);
+  [modalIsOpen[1], setIsOpen[1]] = React.useState(false);
+  [modalIsOpen[2], setIsOpen[2]] = React.useState(false);
+  [modalIsOpen[3], setIsOpen[3]] = React.useState(false);
+  [modalIsOpen[4], setIsOpen[4]] = React.useState(false);
+  [modalIsOpen[5], setIsOpen[5]] = React.useState(false);
   const openModal = (num: number) => {
     setIsOpen[num](true);
   };

@@ -15,7 +15,7 @@
   "rules": {
     "no-irregular-whitespace": 0,
     "react/react-in-jsx-scope": "off",
-    "import/order": [2, { "alphabetize": { "order": "asc" } }],
+    "import/order": "off",
     "prettier/prettier": [
       "error",
       {

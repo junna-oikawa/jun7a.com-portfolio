@@ -15,15 +15,17 @@ const HatomeFriendsComponent: React.FC = () => {
   return (
     <Layout>
       <Mv />
-      <Link href='https://hatome-friends.herokuapp.com/' />
-      <Movie />
-      <Visuals />
-      <DescriptionEyelet />
-      <DescriptionApp />
-      <TargetPurpose />
-      <Backgrounds />
-      <Languages />
-      <Development />
+      <div className={Style.width}>
+        <Link href='https://hatome-friends.herokuapp.com/' />
+        <Movie />
+        <Visuals />
+        <DescriptionEyelet />
+        <DescriptionApp />
+        <TargetPurpose />
+        <Backgrounds />
+        <Languages />
+        <Development />
+      </div>
     </Layout>
   );
 };

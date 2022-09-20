@@ -5,7 +5,12 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  align-items: center;
+  gap: 80px;
+
+  @include mq(sp) {
+    gap: 6vw;
+  }
 
   .br_sp {
     display: none;
@@ -18,9 +23,18 @@
   .top,
   .middle,
   .bottom {
+    width: max(60%, 700px);
     display: flex;
+    padding: 40px 0;
     flex-direction: column;
     align-items: center;
+    background-color: color.color(6);
+    border-radius: 30px;
+
+    @include mq(sp) {
+      width: 100%;
+      border-radius: 0;
+    }
 
     h3 {
       color: color.color(3);
@@ -54,8 +68,8 @@
 
       &.source {
         width: fit-content;
-        max-width: 80%;
-        margin-top: 10px;
+        max-width: min(800px, 60%);
+        margin-top: 20px;
         font-size: 1rem;
         color: color.color(3);
 

@@ -6,7 +6,7 @@ const Sample: React.FC = () => {
     <>
       <p>サンプルです。</p>
     </>
-  )
-}
+  );
+};
 
 export default Sample;
