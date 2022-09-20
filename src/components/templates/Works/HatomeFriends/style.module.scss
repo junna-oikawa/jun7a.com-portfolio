@@ -1,4 +1,8 @@
 @use 'styles/common/vw-calculator.scss' as vw;
 @use 'styles/common/variable.scss' as *;
 
-
+.width {
+  display: flex;
+  flex-direction: column;
+  gap: 20vw;
+}

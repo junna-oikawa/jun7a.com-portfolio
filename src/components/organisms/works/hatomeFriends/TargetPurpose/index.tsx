@@ -1,4 +1,4 @@
-import Layout from '../Layout';
+import Layout from '../../common/Layout';
 import Style from './style.module.scss';
 const TargetPurpose: React.FC = () => {
   return (
