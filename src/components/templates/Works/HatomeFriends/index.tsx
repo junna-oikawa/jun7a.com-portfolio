@@ -1,4 +1,4 @@
-//import Style from './style.module.scss';
+import Style from './style.module.scss';
 import Link from 'components/organisms/works/common/Link';
 import Backgrounds from 'components/organisms/works/hatomeFriends/Backgrounds';
 import DescriptionApp from 'components/organisms/works/hatomeFriends/DescriptionApp';
