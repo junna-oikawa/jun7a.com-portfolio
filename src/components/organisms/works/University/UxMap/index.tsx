@@ -22,6 +22,7 @@ const UxMap: React.FC = () => {
           </div>
         </div>
         <div className={Style.ux_map}>
+          <p>スクロール ▶︎</p>
           <img src='/images/works/university/ux_map.jpg' alt='' />
         </div>
       </div>
