@@ -55,6 +55,7 @@
     .desc {
       h3 {
         line-height: 1.6;
+
         @include mq(sp) {
           margin-bottom: 2vw;
         }
@@ -72,6 +73,7 @@
         @include mq(sp) {
           grid-template-columns: 1fr;
           margin: 0 auto;
+          place-items: center;
         }
 
         .img_wrapper {
