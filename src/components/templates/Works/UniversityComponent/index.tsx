@@ -7,6 +7,7 @@ import BgPurposeLayout from 'components/organisms/works/common/BgPurposeLayout';
 import BgPurpose from 'components/organisms/works/University/BgPurpose';
 import Target from 'components/organisms/works/University/Target';
 import UxMap from 'components/organisms/works/University/UxMap';
+import Process from 'components/organisms/works/University/Process';
 
 const UniversityComponent: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const UniversityComponent: React.FC = () => {
         <Target />
         <BgPurpose />
         <UxMap />
+        <Process />
       </div>
     </Layout>
   );
