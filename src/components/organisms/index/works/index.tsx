@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Style from './style.module.scss';
 import MoreButton from 'components/atoms/moreButton';
 import WorksIcon from 'components/atoms/worksIcon';
@@ -5,15 +6,20 @@ import WorksIcon from 'components/atoms/worksIcon';
 interface ImageObj {
   src: string;
   className: string;
+  href: string;
 }
 
 const imagesSrc: ImageObj[] = [
-  { src: 'hatomeFriends.png', className: 'laptop' },
-  { src: 'university.png', className: 'desktop' },
-  { src: 'postmen.png', className: 'dtp_booklet' },
-  { src: 'vr.png', className: 'goggles' },
-  { src: 'flyer.jpg', className: 'dtp_flyer' },
-  { src: 'drape.png', className: 'desktop' },
+  {
+    src: 'hatomeFriends.png',
+    className: 'laptop',
+    href: '/works/hatomeFriends',
+  },
+  { src: 'university.png', className: 'desktop', href: '/works/university' },
+  { src: 'postmen.png', className: 'dtp_booklet', href: '/works/forPostmen' },
+  { src: 'vr.png', className: 'goggles', href: '/works/strollers' },
+  { src: 'flyer.jpg', className: 'dtp_flyer', href: '/works/sdForum' },
+  { src: 'drape.png', className: 'desktop', href: '/works/drape' },
 ];
 
 const Works: React.FC = () => {
@@ -23,7 +29,11 @@ const Works: React.FC = () => {
         <h2 className='en'>Works</h2>
         <div className={Style.contents}>
           {imagesSrc.map((img, index) => (
-            <WorksIcon src={img.src} className={img.className} key={index} />
+            <Link href={img.href} key={index}>
+              <a>
+                <WorksIcon src={img.src} className={img.className} />
+              </a>
+            </Link>
           ))}
         </div>
         <MoreButton />

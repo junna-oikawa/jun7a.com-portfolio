@@ -1,4 +1,4 @@
-import MvLayout from '../../mvLayout';
+import MvLayout from '../../common/mvLayout';
 
 const title = 'はとめふれんず';
 const subtitle: JSX.Element = (

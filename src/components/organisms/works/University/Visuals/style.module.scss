@@ -1,0 +1,112 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@use 'styles/common/variable' as *;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: end;
+
+  .left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -15%;
+    opacity: 0.7;
+    z-index: -1;
+
+    @include mq(sp) {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        90deg,
+        transparent 0 40%,
+        #fff 50% 100%
+      );
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mq(sp) {
+      width: 100%;
+      gap: 10vw;
+    }
+
+    .desc {
+      h3 {
+        line-height: 1.6;
+
+        @include mq(sp) {
+          margin-bottom: 2vw;
+        }
+      }
+    }
+
+    .desc1 {
+      .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        background-color: #fff;
+        place-items: stretch;
+
+        @include mq(sp) {
+          grid-template-columns: 1fr;
+          margin: 0 auto;
+          place-items: center;
+        }
+
+        .img_wrapper {
+          place-items: stretch;
+          padding: 5px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px color.color(4) solid;
+
+          @include mq(sp) {
+            width: 70vw;
+            height: 40vw;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .desc2 {
+      .images {
+        display: flex;
+        gap: 20px;
+
+        img {
+          width: 45%;
+        }
+      }
+    }
+  }
+}

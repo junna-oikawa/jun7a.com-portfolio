@@ -1,5 +1,5 @@
-//import Style from './style.module.scss';
-import Link from 'components/organisms/works/Link';
+import Style from './style.module.scss';
+import Link from 'components/organisms/works/common/Link';
 import Backgrounds from 'components/organisms/works/hatomeFriends/Backgrounds';
 import DescriptionApp from 'components/organisms/works/hatomeFriends/DescriptionApp';
 import DescriptionEyelet from 'components/organisms/works/hatomeFriends/DescriptionEyelet';
@@ -15,15 +15,17 @@ const HatomeFriendsComponent: React.FC = () => {
   return (
     <Layout>
       <Mv />
-      <Link href='https://hatome-friends.herokuapp.com/' />
-      <Movie />
-      <Visuals />
-      <DescriptionEyelet />
-      <DescriptionApp />
-      <TargetPurpose />
-      <Backgrounds />
-      <Languages />
-      <Development />
+      <div className={Style.width}>
+        <Link href='https://hatome-friends.herokuapp.com/' />
+        <Movie />
+        <Visuals />
+        <DescriptionEyelet />
+        <DescriptionApp />
+        <TargetPurpose />
+        <Backgrounds />
+        <Languages />
+        <Development />
+      </div>
     </Layout>
   );
 };

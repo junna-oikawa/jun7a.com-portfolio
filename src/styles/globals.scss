@@ -1,12 +1,14 @@
 @use './common/vw-calculator' as vw;
+@use './common/colors' as color;
 @import './common/variable';
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: ryo-gothic-plusn, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: ryo-gothic-plusn, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 html {
@@ -44,12 +46,29 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+
+  @include mq(sp) {
+    font-size: min(2.2rem, vw.vw(16));
+  }
+}
+
 p {
   font-size: 1.5rem;
   font-weight: 400;
 
   @include mq(sp) {
     font-size: min(1.5rem, vw.vw(15));
+  }
+}
+
+.br_sp {
+  display: none;
+
+  @include mq(sp) {
+    display: block;
   }
 }
 
