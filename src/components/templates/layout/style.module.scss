@@ -17,10 +17,10 @@ main.main {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 200px;
 
   @include mq(sp) {
     margin-top: 0;
+    gap: 20vw;
     margin-bottom: 100px;
   }
 }
