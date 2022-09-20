@@ -1,4 +1,4 @@
-import Layout from '../hatomeFriends/Layout';
+import Layout from '../Layout';
 import Style from './style.module.scss';
 
 interface Props {

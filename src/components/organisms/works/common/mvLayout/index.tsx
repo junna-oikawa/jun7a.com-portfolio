@@ -3,7 +3,7 @@ import GenreIcon from 'components/atoms/GenreIcon';
 import LangIcon from 'components/atoms/langIcon';
 
 interface Props {
-  title: string;
+  title: string | JSX.Element;
   subtitle: JSX.Element;
   langs: JSX.Element[];
   imgSrc: string;

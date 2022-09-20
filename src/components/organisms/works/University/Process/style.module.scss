@@ -1,0 +1,85 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@use 'styles/common/variable' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .texts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    @include mq(sp) {
+      flex-direction: column;
+    }
+
+    h4 {
+      min-width: 20vw;
+      background-color: color.color(3);
+      padding: 10px;
+      color: #fff;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+
+  .images {
+    width: 80%;
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @include mq(sp) {
+      grid-template-columns: 1fr;
+    }
+
+    .img_wrapper {
+      border: 1px solid color.color(5);
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .overlay {
+      background-color: aquamarine;
+
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  > div {
+    width: 70%;
+    height: fit-content;
+    inset: auto !important;
+
+    @include mq(sp) {
+      width: 100vw;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
