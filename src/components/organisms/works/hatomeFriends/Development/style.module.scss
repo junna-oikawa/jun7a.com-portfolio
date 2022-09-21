@@ -144,6 +144,7 @@
         iframe {
           width: 80%;
           height: 940px;
+          background-color: #807066;
 
           @include mq(sp) {
             width: 100%;

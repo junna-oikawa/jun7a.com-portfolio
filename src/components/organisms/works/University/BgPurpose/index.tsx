@@ -5,7 +5,7 @@ import Style from './style.module.scss';
 const item = {
   bg: {
     imgSrc: '/images/works/university/background.png',
-    h4: '大学の選択肢は国内だけでいいのか？',
+    h4: ['大学の選択肢は国内だけでいいのか？'],
     p: (
       <>
         大学を決める時、国内の大学から選ぶ人が多い。 <br />
@@ -18,13 +18,13 @@ const item = {
   },
   purpose: {
     imgSrc: '/images/works/university/purpose.jpg',
-    h4: (
+    h4: [
       <>
         大学の選択肢を広げ、
         <br />
         海外の大学にも興味を持ってもらう
-      </>
-    ),
+      </>,
+    ],
     p: '記事を読んだ人が、「日本の大学」以外にも選択肢があるということに気づくきっかけになることを目指す。',
   },
 };
