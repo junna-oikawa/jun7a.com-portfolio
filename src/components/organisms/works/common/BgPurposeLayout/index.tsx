@@ -8,8 +8,8 @@ interface Props {
 
 interface Item {
   imgSrc: string;
-  p: string | ReactNode;
-  h4: string | ReactNode;
+  p?: string | ReactNode;
+  h4: ReactNode[];
 }
 
 const BgPurposeLayout: React.FC<Props> = ({ bg, purpose }: Props) => {
@@ -23,7 +23,9 @@ const BgPurposeLayout: React.FC<Props> = ({ bg, purpose }: Props) => {
         <div className={Style.img_wrapper}>
           <img src={bg.imgSrc} />
         </div>
-        <h4>{bg.h4}</h4>
+        {bg.h4.map((item, index) => (
+          <h4 key={index}>{item}</h4>
+        ))}
         <p>{bg.p}</p>
       </div>
       <div className={Style.right}>
@@ -34,7 +36,9 @@ const BgPurposeLayout: React.FC<Props> = ({ bg, purpose }: Props) => {
         <div className={Style.img_wrapper}>
           <img src={purpose.imgSrc} />
         </div>
-        <h4>{purpose.h4}</h4>
+        {purpose.h4.map((item, index) => (
+          <h4 key={index}>{item}</h4>
+        ))}
         <p>{purpose.p}</p>
       </div>
     </div>
