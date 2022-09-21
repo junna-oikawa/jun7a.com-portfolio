@@ -12,6 +12,7 @@
   overflow: hidden;
 
   @include mq(sp) {
+    width: 95%;
     flex-direction: column;
   }
 
