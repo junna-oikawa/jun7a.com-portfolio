@@ -5,6 +5,7 @@ import LangIcon from 'components/atoms/langIcon';
 interface Props {
   title: string | JSX.Element;
   subtitle: JSX.Element;
+  genre: string;
   langs: JSX.Element[];
   imgSrc: string;
   type: string;
@@ -13,6 +14,7 @@ interface Props {
 const MvLayout: React.FC<Props> = ({
   title,
   subtitle,
+  genre,
   langs,
   imgSrc,
   type,
@@ -35,7 +37,7 @@ const MvLayout: React.FC<Props> = ({
           </h1>
           <h2>{subtitle}</h2>
           <div className={Style.grid_wrapper}>
-            <GenreIcon name='Web' />
+            <GenreIcon name={genre} />
             {langs.map((lang, index: number) => (
               <LangIcon name={lang} key={index} />
             ))}

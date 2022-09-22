@@ -13,12 +13,16 @@ const imagesSrc: ImageObj[] = [
   {
     src: 'hatomeFriends.png',
     className: 'laptop',
-    href: '/works/hatomeFriends',
+    href: '/works/hatome_friends',
   },
   { src: 'university.png', className: 'desktop', href: '/works/university' },
-  { src: 'postmen.png', className: 'dtp_booklet', href: '/works/forPostmen' },
+  {
+    src: 'deliveryman.png',
+    className: 'dtp_booklet',
+    href: '/works/for_delivery_man',
+  },
   { src: 'vr.png', className: 'goggles', href: '/works/strollers' },
-  { src: 'flyer.jpg', className: 'dtp_flyer', href: '/works/sdForum' },
+  { src: 'flyer.jpg', className: 'dtp_flyer', href: '/works/sd_forum' },
   { src: 'drape.png', className: 'desktop', href: '/works/drape' },
 ];
 

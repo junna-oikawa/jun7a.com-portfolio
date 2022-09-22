@@ -4,7 +4,7 @@ import Mv from 'components/organisms/works/University/Mv';
 import Process from 'components/organisms/works/University/Process';
 import Target from 'components/organisms/works/University/Target';
 import UxMap from 'components/organisms/works/University/UxMap';
-import Layout from 'components/templates/layout';
+import Layout from 'components/templates/Layout';
 import Murmur from 'components/organisms/works/University/Murmur';
 import Visuals from 'components/organisms/works/University/Visuals';
 import Link from 'components/organisms/works/common/Link';

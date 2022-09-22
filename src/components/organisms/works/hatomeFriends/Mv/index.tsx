@@ -1,4 +1,4 @@
-import MvLayout from '../../common/mvLayout';
+import MvLayout from '../../common/MvLayout';
 
 const title = 'はとめふれんず';
 const subtitle: JSX.Element = (
@@ -8,6 +8,7 @@ const subtitle: JSX.Element = (
     キャラクターWebアプリケーション
   </>
 );
+const genre = 'Web';
 const langs: JSX.Element[] = [
   <>
     Java
@@ -36,6 +37,7 @@ const Mv: React.FC = () => {
     <MvLayout
       title={title}
       subtitle={subtitle}
+      genre={genre}
       langs={langs}
       imgSrc={imgSrc}
       type={type}

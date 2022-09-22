@@ -1,4 +1,4 @@
-import Layout from '../layout';
+import Layout from '../Layout';
 import About from 'components/organisms/index/about';
 import MV from 'components/organisms/index/mv';
 import Works from 'components/organisms/index/works';

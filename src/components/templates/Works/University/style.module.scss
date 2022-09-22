@@ -1,0 +1,11 @@
+@use 'styles/common/vw-calculator.scss' as vw;
+@use 'styles/common/variable.scss' as *;
+
+.width {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20vw;
+}

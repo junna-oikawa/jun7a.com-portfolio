@@ -2,33 +2,25 @@ import Layout from '../../common/Layout';
 import MvLayout from '../../common/MvLayout';
 import Style from './style.module.scss';
 
-const title = (
-  <>
-    あなたにぴったりの
-    <br />
-    アート・デザインを
-    <br className='br_sp' />
-    学べる学校は？
-  </>
+const title = <>配達員の皆さんに感謝を</>;
+const subtitle: JSX.Element = (
+  <>非対面で配達員の方々に感謝を伝える方法を提案する冊子</>
 );
-const subtitle: JSX.Element = <>D3.js を用いたデータビジュアライズによる記事</>;
-const genre = 'Web';
+const genre = 'DTP';
 const langs: JSX.Element[] = [
   <>
-    Java
+    Illust
     <br />
-    Script
+    rator
   </>,
-  <>CSS</>,
-  <>D3.js</>,
   <>
-    Obser
+    Photo
     <br />
-    vable
+    shop
   </>,
 ];
-const imgSrc = 'university.png';
-const type = 'desktop';
+const imgSrc = 'deliveryman.png';
+const type = 'dtp';
 
 const Mv: React.FC = () => {
   return (

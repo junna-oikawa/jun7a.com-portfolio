@@ -73,36 +73,45 @@
       margin-left: auto;
     }
 
-    img.bg {
-      width: 60vw;
+    img {
+      .bg {
+        width: 60vw;
 
-      @include mq(sp) {
-        width: min(80vh, 80vw);
+        @include mq(sp) {
+          width: min(80vh, 80vw);
+        }
       }
     }
 
-    img.main {
-      width: 60vw;
-      position: absolute;
-
-      @include mq(sp) {
-        width: min(80vh, 80vw);
-        right: -11vw;
-      }
-
-      &.laptop {
-        right: -8vw;
+    img {
+      &.main {
+        width: 60vw;
+        position: absolute;
 
         @include mq(sp) {
+          width: min(80vh, 80vw);
           right: -11vw;
         }
-      }
 
-      &.desktop {
-        right: -7vw;
+        &.laptop {
+          right: -8vw;
 
-        @include mq(sp) {
-          right: -11vw;
+          @include mq(sp) {
+            right: -11vw;
+          }
+        }
+
+        &.desktop {
+          right: -7vw;
+
+          @include mq(sp) {
+            right: -11vw;
+          }
+        }
+
+        &.dtp {
+          right: -4vw;
+          filter: drop-shadow(5px 5px 5px #aaa);
         }
       }
     }
