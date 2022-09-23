@@ -11,7 +11,7 @@ interface Props {
   type: string;
 }
 
-const MvLayout: React.FC<Props> = ({
+const tmp: React.FC<Props> = ({
   title,
   subtitle,
   genre,
@@ -48,4 +48,4 @@ const MvLayout: React.FC<Props> = ({
   );
 };
 
-export default MvLayout;
+export default tmp;

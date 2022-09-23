@@ -1,5 +1,5 @@
 import Layout from '../../common/Layout';
-import MvLayout from '../../common/MvLayout';
+import MvLayout from '../../common/tmp';
 import Style from './style.module.scss';
 
 const title = (
