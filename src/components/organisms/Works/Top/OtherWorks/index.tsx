@@ -13,6 +13,7 @@ const items = [
     href: 'https://jun7a.com/works_page/VR/index.php',
     folderName: 'works/others/vr',
     imgNum: 5,
+    id: 'stroller',
   },
   {
     title: 'SDフォーラム フライヤー',
@@ -23,6 +24,7 @@ const items = [
     ],
     folderName: 'works/others/sd_forum',
     imgNum: 4,
+    id: 'sdForum',
   },
   {
     title: 'Drape',
@@ -32,6 +34,7 @@ const items = [
     ],
     folderName: 'works/others/drape',
     imgNum: 6,
+    id: 'drape',
   },
 ];
 const OtherWorks: React.FC = () => {

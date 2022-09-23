@@ -13,6 +13,7 @@ interface Props {
   title: string;
   body: string[];
   href?: string;
+  id?: string;
 }
 
 const Card: React.FC<Props> = ({
@@ -21,10 +22,11 @@ const Card: React.FC<Props> = ({
   folderName,
   imgNum,
   href,
+  id,
 }: Props) => {
   const images = [...Array(imgNum)].map((_, i) => i);
   return (
-    <div className={Style.wrapper}>
+    <div className={Style.wrapper} id={id}>
       <div className={Style.top}>
         <Swiper
           slidesPerView={1}
@@ -57,7 +59,7 @@ const Card: React.FC<Props> = ({
           <p key={index}>{content}</p>
         ))}
         {href && (
-          <a href='href'>
+          <a href={href} target='_blank' rel='noopener noreferrer'>
             詳細はこちら
             <img
               src='/images/works/common/open_in_new.svg'
