@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import Style from './style.module.scss';
 
-const MoreButton: React.FC = () => {
+interface Props {
+  href: string;
+}
+
+const MoreButton: React.FC<Props> = ({ href }: Props) => {
   return (
     <>
-      <Link href='/'>
+      <Link href={href}>
         <a className={Style.wrapper}>
           <img
             src='/images/common/buttons/btn_more.svg'

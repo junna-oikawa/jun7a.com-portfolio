@@ -40,7 +40,7 @@ const Works: React.FC = () => {
             </Link>
           ))}
         </div>
-        <MoreButton />
+        <MoreButton href='/works' />
       </section>
     </>
   );
