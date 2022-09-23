@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import UniversityComponent from 'components/templates/Works/UniversityComponent';
+import UniversityComponent from 'components/templates/Works/University';
 
 const University: NextPage = () => {
   return <UniversityComponent />;

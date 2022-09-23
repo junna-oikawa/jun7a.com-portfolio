@@ -60,7 +60,7 @@ p {
   font-weight: 400;
 
   @include mq(sp) {
-    font-size: min(1.5rem, vw.vw(15));
+    font-size: min(1.5rem, vw.vw(13));
   }
 }
 

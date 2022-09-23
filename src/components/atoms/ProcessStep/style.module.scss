@@ -1,0 +1,12 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@use 'styles/common/variable' as *;
+
+.content {
+  min-width: 20vw;
+  background-color: color.color(3);
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
