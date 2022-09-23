@@ -4,7 +4,7 @@ import Style from './style.module.scss';
 interface Props {
   children: ReactNode;
   heading: string;
-  kana: string;
+  kana?: string;
 }
 
 const Layout: React.FC<Props> = ({ children, heading, kana }: Props) => {
