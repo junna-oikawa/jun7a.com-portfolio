@@ -1,5 +1,5 @@
 import Style from './style.module.scss';
-import Layout from 'components/templates/Tmp';
+import Layout from 'components/templates/Layout';
 import Mv from 'components/organisms/Works/ForDeliveryMan/Mv';
 import Visuals from 'components/organisms/Works/ForDeliveryMan/Visuals';
 import Target from 'components/organisms/Works/ForDeliveryMan/Target';
