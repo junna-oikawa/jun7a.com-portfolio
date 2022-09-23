@@ -59,7 +59,7 @@ const Card: React.FC<Props> = ({
           <p key={index}>{content}</p>
         ))}
         {href && (
-          <a href={href}>
+          <a href={href} target='_blank'>
             詳細はこちら
             <img
               src='/images/works/common/open_in_new.svg'

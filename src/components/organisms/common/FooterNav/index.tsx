@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Style from './style.module.scss';
 import FooterNavIcon from 'components/atoms/FooterNavIcon';
 
@@ -13,14 +14,16 @@ const FooterNav: React.FC = () => {
     <>
       <div className={Style.wrapper}>
         {datas.map((data, index: number) => (
-          <a className={Style.icon} key={index} href={`/#${data.id}`}>
-            <FooterNavIcon
-              name={data.name}
-              src={data.src}
-              id={data.id}
-              key={data.id}
-            />
-          </a>
+          <Link href={`/#${data.id}`} key={index}>
+            <a className={Style.icon}>
+              <FooterNavIcon
+                name={data.name}
+                src={data.src}
+                id={data.id}
+                key={data.id}
+              />
+            </a>
+          </Link>
         ))}
       </div>
     </>
