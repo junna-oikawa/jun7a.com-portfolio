@@ -4,7 +4,10 @@ import Style from './style.module.scss';
 
 const title = <>配達員の皆さんに感謝を</>;
 const subtitle: JSX.Element = (
-  <>非対面で配達員の方々に感謝を伝える方法を提案する冊子</>
+  <>
+    <span>非対面で配達員の方々に</span>
+    <span>感謝を伝える方法を提案する冊子</span>
+  </>
 );
 const genre = 'DTP';
 const langs: JSX.Element[] = [

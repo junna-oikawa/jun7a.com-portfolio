@@ -7,7 +7,8 @@ const Visuals: React.FC = () => {
         <div className={Style.left}>
           <h4>
             <span>荷物を受け取る時・荷物を送る時 × </span>
-            <span>手書きメッセージスペースあり・なしの４パターン</span>
+            <span>手書きメッセージスペースあり・なしの</span>
+            <span>４パターン</span>
           </h4>
           <img src='/images/works/for_deliveryman/visuals_01.jpg' alt='' />
         </div>
@@ -27,16 +28,21 @@ const Visuals: React.FC = () => {
             className={Style.border_radius}
           />
         </div>
-        <h5>すぐに冊子をコピー・使用できる工夫</h5>
-        <p>
-          冊子の右上をコピー機に合わせてA4でコピーすると、
-          <br />
-          ポスター部分 のみを印刷でき、すぐに使えるようなデザインとなっている。
-        </p>
-        <h5>QRコードからデザインをダウンロードできる工夫</h5>
-        <p>
-          最後のページにQRコードをつけ、ポスターのデザインをダウンロードが可能。
-        </p>
+        <div>
+          <h5>すぐに冊子をコピー・使用できる工夫</h5>
+          <p>
+            冊子の右上をコピー機に合わせてA4でコピーすると、
+            <br />
+            ポスター部分
+            のみを印刷でき、すぐに使えるようなデザインとなっている。
+          </p>
+        </div>
+        <div>
+          <h5>QRコードからデザインをダウンロードできる工夫</h5>
+          <p>
+            最後のページにQRコードをつけ、ポスターのデザインをダウンロードが可能。
+          </p>
+        </div>
       </div>
       <div className={Style.bottom}>
         <img src='/images/works/for_deliveryman/visuals_07.jpg' alt='' />

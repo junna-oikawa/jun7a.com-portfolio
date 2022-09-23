@@ -13,9 +13,9 @@
 
   @include mq(sp) {
     height: max(calc(100vh - 100px), 90vw);
+    flex-direction: column;
     align-items: normal;
     justify-content: center;
-    flex-direction: column;
   }
 
   .texts {
@@ -44,6 +44,10 @@
 
       @include mq(sp) {
         font-size: min(2rem, vw.vw(15));
+      }
+
+      span {
+        display: inline-block;
       }
     }
 
@@ -74,7 +78,7 @@
     }
 
     img {
-      .bg {
+      &.bg {
         width: 60vw;
 
         @include mq(sp) {
@@ -111,7 +115,11 @@
 
         &.dtp {
           right: -4vw;
-          filter: drop-shadow(5px 5px 5px #aaa);
+          filter: drop-shadow(0 0 0.5vw #aaa);
+
+          @include mq(sp) {
+            right: -5vw;
+          }
         }
       }
     }

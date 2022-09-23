@@ -6,18 +6,32 @@
   display: flex;
   flex-direction: column;
   gap: 5vw;
+
+  @include mq(sp) {
+    gap: 8vw;
+  }
+
   // 共通
   img {
     width: 100%;
     filter: drop-shadow(0 0 0.5vw #aaa);
   }
+  // 共通終わり
 
   .top {
     display: flex;
     justify-content: space-between;
 
+    @include mq(sp) {
+      flex-direction: column;
+    }
+
     .left {
       width: 70%;
+
+      @include mq(sp) {
+        width: 100%;
+      }
 
       h4 {
         line-height: 1.4;
@@ -37,10 +51,27 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      @include mq(sp) {
+        width: 100%;
+        flex-direction: row;
+      }
+
+      img {
+        @include mq(sp) {
+          width: 30%;
+        }
+      }
     }
   }
 
   .middle {
+    display: flex;
+    flex-direction: column;
+    @include mq(sp) {
+      gap: 3vw;
+    }
+
     .images {
       display: flex;
       align-items: center;
@@ -64,6 +95,7 @@
 
       @include mq(sp) {
         font-size: min(2rem, vw.vw(14));
+        text-align: left;
       }
     }
 
@@ -71,6 +103,10 @@
       text-align: right;
       line-height: 1.5;
       margin-bottom: 2vw;
+
+      @include mq(sp) {
+        text-align: left;
+      }
     }
   }
 

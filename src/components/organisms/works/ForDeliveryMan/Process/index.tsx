@@ -5,21 +5,21 @@ import ProcessStep from 'components/atoms/ProcessStep';
 import ProcessImage from 'components/atoms/ProcessImage';
 
 const texts = [
-  'テーマ・ターゲット決め',
-  'ペルソナ・UXマップの作成',
-  '調査',
-  'データ収集',
-  'コーディング',
-  'ライティング',
+  'コンセプト・テーマの決定',
+  '調査・下調べ',
+  '台割作成',
+  'イラストの作成',
+  '実際に使用',
+  '冊子の制作',
 ];
 
 const images = [
-  '/images/works/university/process_01.jpeg',
-  '/images/works/university/process_02.png',
-  '/images/works/university/process_03.png',
-  '/images/works/university/process_04.png',
-  '/images/works/university/process_05.png',
-  '/images/works/university/process_06.png',
+  '/images/works/for_deliveryman/process_01.jpg',
+  '/images/works/for_deliveryman/process_02.JPG',
+  '/images/works/for_deliveryman/process_03.jpg',
+  '/images/works/for_deliveryman/process_04.jpg',
+  '/images/works/for_deliveryman/process_05.jpg',
+  '/images/works/for_deliveryman/process_06.jpg',
 ];
 
 const Process: React.FC = () => {
