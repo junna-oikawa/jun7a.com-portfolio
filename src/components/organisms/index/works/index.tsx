@@ -19,7 +19,7 @@ const imagesSrc: ImageObj[] = [
   {
     src: 'deliveryman.png',
     className: 'dtp_booklet',
-    href: '/works/for_delivery_man',
+    href: '/works/for_deliveryman',
   },
   { src: 'vr.png', className: 'goggles', href: '/works/strollers' },
   { src: 'flyer.jpg', className: 'dtp_flyer', href: '/works/sd_forum' },
