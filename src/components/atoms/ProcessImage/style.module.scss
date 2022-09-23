@@ -1,0 +1,50 @@
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+@use 'styles/common/variable' as *;
+
+.img_wrapper {
+  border: 1px solid color.color(5);
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+
+    &.full_screen_icon {
+      width: 1.5vw;
+      position: absolute;
+      bottom: 1vw;
+      right: 1vw;
+    }
+  }
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10001;
+  cursor: pointer;
+
+  > div {
+    width: 70%;
+    height: fit-content;
+    inset: auto !important;
+
+    @include mq(sp) {
+      width: 100vw;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
