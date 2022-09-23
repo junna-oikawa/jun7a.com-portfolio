@@ -39,7 +39,7 @@ const Card: React.FC<Props> = ({
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <div className={Style.swiper_slide_content}>
-                <img src={`/images/works/others/${folderName}/${image}.jpg`} />
+                <img src={`/images/${folderName}/${image}.jpg`} />
               </div>
             </SwiperSlide>
           ))}
