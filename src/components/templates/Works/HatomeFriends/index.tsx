@@ -9,7 +9,7 @@ import Movie from 'components/organisms/Works/HatomeFriends/Movie';
 import Mv from 'components/organisms/Works/HatomeFriends/Mv';
 import TargetPurpose from 'components/organisms/Works/HatomeFriends/Target';
 import Visuals from 'components/organisms/Works/HatomeFriends/Visuals';
-import Layout from 'components/templates/Layout';
+import Layout from 'components/templates/Tmp';
 import BgPurpose from 'components/organisms/Works/HatomeFriends/BgPurpose';
 
 const HatomeFriendsComponent: React.FC = () => {
