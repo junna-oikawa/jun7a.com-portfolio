@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Style from './style.module.scss';
 import MoreButton from 'components/atoms/MoreButton';
-import WorksIcon from 'components/atoms/worksIcon';
+import WorksIcon from 'components/atoms/tmpworksIcon';
 
 interface ImageObj {
   src: string;
