@@ -1,6 +1,7 @@
 import { Link as Scroll } from 'react-scroll';
 import Style from './style.module.scss';
 import FooterNavIcon from 'components/atoms/FooterNavIcon';
+import index from 'components/templates/index';
 
 const datas = [
   { name: 'top', src: 'nav_top.svg', id: 'top' },
@@ -14,7 +15,7 @@ const TopFooterNav: React.FC = () => {
     <>
       <div className={Style.wrapper}>
         {datas.map((data, index: number) => (
-          <Scroll to={data.id} smooth={true} offset={-50}>
+          <Scroll to={data.id} smooth={true} offset={-50} key={index}>
             <div className={Style.icon} key={index}>
               <FooterNavIcon
                 name={data.name}
