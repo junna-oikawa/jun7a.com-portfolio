@@ -1,13 +1,13 @@
 import Style from './style.module.scss';
-import BgPurpose from 'components/organisms/works/University/BgPurpose';
-import Mv from 'components/organisms/works/University/Mv';
-import Process from 'components/organisms/works/University/Process';
-import Target from 'components/organisms/works/University/Target';
-import UxMap from 'components/organisms/works/University/UxMap';
+import BgPurpose from 'components/organisms/tmpworks/University/BgPurpose';
+import Mv from 'components/organisms/tmpworks/University/Mv';
+import Process from 'components/organisms/tmpworks/University/Process';
+import Target from 'components/organisms/tmpworks/University/Target';
+import UxMap from 'components/organisms/tmpworks/University/UxMap';
 import Layout from 'components/templates/Layout';
-import Murmur from 'components/organisms/works/University/Murmur';
-import Visuals from 'components/organisms/works/University/Visuals';
-import Link from 'components/organisms/works/common/Link';
+import Murmur from 'components/organisms/tmpworks/University/Murmur';
+import Visuals from 'components/organisms/tmpworks/University/Visuals';
+import Link from 'components/organisms/tmpworks/common/Link';
 
 const UniversityComponent: React.FC = () => {
   return (

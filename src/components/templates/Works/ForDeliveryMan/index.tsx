@@ -1,12 +1,12 @@
 import Style from './style.module.scss';
 import Layout from 'components/templates/Layout';
-import Mv from 'components/organisms/works/ForDeliveryMan/Mv';
-import Visuals from 'components/organisms/works/ForDeliveryMan/Visuals';
-import Target from 'components/organisms/works/ForDeliveryMan/Target';
-import BgPurpose from 'components/organisms/works/ForDeliveryMan/BgPurpose';
-import Story from 'components/organisms/works/ForDeliveryMan/Story';
-import Process from 'components/organisms/works/ForDeliveryMan/Process';
-import Murmur from 'components/organisms/works/ForDeliveryMan/Murmur';
+import Mv from 'components/organisms/tmpworks/ForDeliveryMan/Mv';
+import Visuals from 'components/organisms/tmpworks/ForDeliveryMan/Visuals';
+import Target from 'components/organisms/tmpworks/ForDeliveryMan/Target';
+import BgPurpose from 'components/organisms/tmpworks/ForDeliveryMan/BgPurpose';
+import Story from 'components/organisms/tmpworks/ForDeliveryMan/Story';
+import Process from 'components/organisms/tmpworks/ForDeliveryMan/Process';
+import Murmur from 'components/organisms/tmpworks/ForDeliveryMan/Murmur';
 
 const ForDeliveryManComponent: React.FC = () => {
   return (
