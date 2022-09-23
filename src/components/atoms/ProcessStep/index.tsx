@@ -4,7 +4,7 @@ interface Props {
   text: string;
 }
 
-const ProcessStep: React.FC<Props> = ({ text }) => {
+const ProcessStep: React.FC<Props> = ({ text }: Props) => {
   return <h4 className={Style.content}>{text}</h4>;
 };
 
