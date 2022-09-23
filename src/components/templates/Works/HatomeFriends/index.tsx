@@ -7,10 +7,10 @@ import Development from 'components/organisms/Works/HatomeFriends/Development';
 import Languages from 'components/organisms/Works/HatomeFriends/Languages';
 import Movie from 'components/organisms/Works/HatomeFriends/Movie';
 import Mv from 'components/organisms/Works/HatomeFriends/Mv';
-import TargetPurpose from 'components/organisms/Works/HatomeFriends/Target';
 import Visuals from 'components/organisms/Works/HatomeFriends/Visuals';
 import Layout from 'components/templates/Layout';
 import BgPurpose from 'components/organisms/Works/HatomeFriends/BgPurpose';
+import Target from 'components/organisms/Works/HatomeFriends/Target';
 
 const HatomeFriendsComponent: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const HatomeFriendsComponent: React.FC = () => {
         <Visuals />
         <DescriptionEyelet />
         <DescriptionApp />
-        <TargetPurpose />
+        <Target />
         <BgPurpose />
         <Backgrounds />
         <Languages />
