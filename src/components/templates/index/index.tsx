@@ -1,7 +1,7 @@
 import Layout from '../Layout';
-import About from 'components/organisms/index/About';
-import MV from 'components/organisms/index/Mv';
-import Works from 'components/organisms/index/Works';
+import About from 'components/organisms/Top/About';
+import MV from 'components/organisms/Top/Mv';
+import Works from 'components/organisms/Top/Works';
 
 const Top: React.FC = () => {
   return (

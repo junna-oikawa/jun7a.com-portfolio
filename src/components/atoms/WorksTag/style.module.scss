@@ -1,0 +1,12 @@
+@use 'styles/common/variable' as *;
+@use 'styles/common/vw-calculator' as vw;
+@use 'styles/common/colors' as color;
+
+.wrapper {
+  padding: 10px 15px;
+  background-color: color.color(2);
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+}
