@@ -1,14 +1,19 @@
-import Card from 'components/atoms/Card';
+import Card from 'components/Molecules/common/Card';
 import Style from './style.module.scss';
 
-const item = {
-  title: 'titletest',
-  body: ['aaaaaaaaaa', 'bbbbbbbbbbbbbbbbbbbbbbb', 'ccccccccccccccccccccccccc'],
-  folderName: 'vr',
-  imgNum: 5,
-};
+interface Item {
+  title: string;
+  body: string[];
+  href?: string;
+  folderName: string;
+  imgNum: number;
+}
 
-const OtherWork: React.FC = () => {
+interface Props {
+  item: Item;
+}
+
+const OtherWork: React.FC<Props> = ({ item }: Props) => {
   return (
     <div className={Style.wrapper}>
       <Card {...item} />

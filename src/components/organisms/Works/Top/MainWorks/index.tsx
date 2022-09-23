@@ -21,7 +21,7 @@ const works = [
   },
   {
     imgSrc: 'deliveryman.png',
-    imgClassName: 'dtp',
+    imgClassName: 'dtp_booklet',
     title: '配達員の皆さんに感謝を',
     desc: '非対面で配達員の方々に感謝を伝える方法を提案する冊子',
     tags: ['DTP', 'Illustrator', 'Photoshop'],

@@ -12,9 +12,16 @@ interface Props {
   imgNum: number;
   title: string;
   body: string[];
+  href?: string;
 }
 
-const Card: React.FC<Props> = ({ title, body, folderName, imgNum }: Props) => {
+const Card: React.FC<Props> = ({
+  title,
+  body,
+  folderName,
+  imgNum,
+  href,
+}: Props) => {
   const images = [...Array(imgNum)].map((_, i) => i);
   return (
     <div className={Style.wrapper}>
@@ -49,6 +56,15 @@ const Card: React.FC<Props> = ({ title, body, folderName, imgNum }: Props) => {
         {body.map((content, index) => (
           <p key={index}>{content}</p>
         ))}
+        {href && (
+          <a href='href'>
+            詳細はこちら
+            <img
+              src='/images/works/common/open_in_new.svg'
+              alt='別タブで開きます'
+            />
+          </a>
+        )}
       </div>
     </div>
   );
