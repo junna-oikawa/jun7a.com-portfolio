@@ -1,5 +1,5 @@
 import Style from './style.module.scss';
-import LangIcon from 'components/atoms/langIcon';
+import LangIcon from 'components/atoms/LangIcon';
 
 const langs: JSX.Element[] = [
   <>

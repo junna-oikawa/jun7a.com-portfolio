@@ -1,6 +1,6 @@
 import Style from './style.module.scss';
 import GenreIcon from 'components/atoms/GenreIcon';
-import LangIcon from 'components/atoms/langIcon';
+import LangIcon from 'components/atoms/LangIcon';
 
 interface Props {
   title: string | JSX.Element;
