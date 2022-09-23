@@ -23,6 +23,10 @@
     margin-right: auto;
     position: relative;
 
+    @include mq(sp) {
+      height: 30px;
+    }
+
     img {
       width: 50px;
       height: 50px;
@@ -43,7 +47,7 @@
 
         @include mq(sp) {
           font-size: 2rem;
-          bottom: 2px;
+          line-height: 1;
           left: 33px;
         }
       }
@@ -76,7 +80,9 @@
       display: flex;
       gap: 50px;
       li {
-        font-size: 2rem;
+        a {
+          font-size: 2rem;
+        }
       }
     }
   }

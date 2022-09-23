@@ -7,6 +7,7 @@ interface Item {
   href?: string;
   folderName: string;
   imgNum: number;
+  id: string;
 }
 
 interface Props {

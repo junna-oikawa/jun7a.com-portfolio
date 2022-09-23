@@ -18,9 +18,21 @@ const Header: React.FC<Props> = ({ isTopPage }: Props) => {
         </Link>
         <nav>
           <ul>
-            <li className='en'>Works</li>
-            <li className='en'>About</li>
-            <li className='en'>Prototype</li>
+            <li className='en'>
+              <Link href='/#works'>
+                <a>Works</a>
+              </Link>
+            </li>
+            <li className='en'>
+              <Link href='/#about'>
+                <a>About</a>
+              </Link>
+            </li>
+            <li className='en'>
+              <Link href='/#memory'>
+                <a>Memory</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
