@@ -21,9 +21,9 @@ const imagesSrc: ImageObj[] = [
     className: 'dtp_booklet',
     href: '/works/for_deliveryman',
   },
-  { src: 'vr.png', className: 'goggles', href: '/works/strollers' },
-  { src: 'flyer.jpg', className: 'dtp_flyer', href: '/works/sd_forum' },
-  { src: 'drape.png', className: 'desktop', href: '/works/drape' },
+  { src: 'vr.png', className: 'goggles', href: '/works#stroller' },
+  { src: 'flyer.jpg', className: 'dtp_flyer', href: '/works#sdForum' },
+  { src: 'drape.png', className: 'desktop', href: '/works#drape' },
 ];
 
 const Works: React.FC = () => {

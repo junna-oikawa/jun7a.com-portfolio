@@ -4,6 +4,7 @@ import HeadComponent from 'components/atoms/HeadComponent';
 import Footer from 'components/organisms/common/Footer';
 import FooterNav from 'components/organisms/common/FooterNav';
 import Header from 'components/organisms/common/Header';
+import TopFooterNav from 'components/organisms/Top/TopFooterNav';
 
 interface Props {
   children: ReactNode;
@@ -22,7 +23,7 @@ const Layout: React.FC<Props> = ({ children, isTopPage }: Props) => {
         <Footer />
       </footer>
       <div className={Style.footer_nav}>
-        <FooterNav />
+        {isTopPage ? <TopFooterNav /> : <FooterNav />}
       </div>
     </>
   );
