@@ -11,7 +11,7 @@ const items = [
       '主にキャラクターモデリング・骨入れ・アニメーション、カメラ(コーディング)、コントローラ連携を担当しました。',
     ],
     href: 'https://jun7a.com/works_page/VR/index.php',
-    folderName: 'vr',
+    folderName: 'works/others/vr',
     imgNum: 5,
   },
   {
@@ -21,7 +21,7 @@ const items = [
       'Blender, Illustratorを使用しました。',
       '大学はイラストではなく、3Dモデルになっています。',
     ],
-    folderName: 'sd_forum',
+    folderName: 'works/others/sd_forum',
     imgNum: 4,
   },
   {
@@ -30,7 +30,7 @@ const items = [
       'インターンシップにて、商品のプロモーションサイトの制作を行いました。',
       '実際にある製品をもとに、架空のショップ・ブランディング・企画・Webデザインを提案する一連の流れを1人で担当しました。',
     ],
-    folderName: 'drape',
+    folderName: 'works/others/drape',
     imgNum: 6,
   },
 ];
