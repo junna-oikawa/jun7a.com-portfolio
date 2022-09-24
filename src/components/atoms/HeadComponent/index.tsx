@@ -7,7 +7,7 @@ const HeadComponent: React.FC = () => {
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-        <title>Junna Oikawa's Portfolio | 及川純奈</title>
+        <title>Junna Oikawa&apos;s Portfolio | 及川純奈</title>
         <meta
           name='description'
           content='Junna Oikawa | 及川純奈のポートフォリオサイトです。'
