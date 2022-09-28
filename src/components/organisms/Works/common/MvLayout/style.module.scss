@@ -91,6 +91,7 @@
       &.main {
         width: 60vw;
         position: absolute;
+        background-color: #fff;
 
         @include mq(sp) {
           width: min(80vh, 80vw);
