@@ -3,14 +3,23 @@ import Style from './style.module.scss';
 
 const items = [
   {
-    title: 'PFサイト リニューアル',
+    title: '海外旅行が好きです(2026)',
     body: [
-      'ポートフォリオサイトをリニューアルしました。',
-      'Next.js, TypeScriptを中心に製作しました。',
-      '作品ページは未完成ですが、今後少しずつバックエンド側にも手を出しつつ、管理していこうと思います。',
+      '海外旅行が好きで、まだ多くはないですがさまざまな国を訪れました！',
+      'アメリカ(フロリダ・ロサンゼルス・ハワイ)/カナダ(トロント)/ギリシャ/香港/中国(上海)/韓国/シンガポール/オーストラリア/シンガポール',
+      '今後もいろんな土地・いろいろな価値観に触れられるよう、英語学習を頑張ります！',
     ],
-    folderName: 'top/memory/pf',
-    imgNum: 1,
+    folderName: 'top/memory/travel',
+    imgNum: 6,
+  },
+  {
+    title: 'カメラを始めました(2026)',
+    body: [
+      '新しくx100viをお迎えし、カメラを本格的に使い始めました！',
+      'たくさん良い写真が撮れるよう頑張ります！',
+    ],
+    folderName: 'top/memory/camera',
+    imgNum: 6,
   },
   {
     title: 'カナダ留学(2019)',
@@ -30,7 +39,7 @@ const items = [
       '絶叫アトラクションも最高でした…',
     ],
     folderName: 'top/memory/wdw',
-    imgNum: 3,
+    imgNum: 2,
   },
 ];
 const Memory: React.FC = () => {

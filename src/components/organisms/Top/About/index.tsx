@@ -55,8 +55,9 @@ const About: React.FC = () => {
             <p>
               東京都立大学院
               <br />
-              システムデザイン研究科インダストリアルアート学域 在学中
+              システムデザイン研究科インダストリアルアート学域 終了
             </p>
+            <p>2024年よりメガベンチャーにてWebエンジニアとして勤務</p>
             <div className={Style.grid_wrapper}>
               {langs.map((item, index) => (
                 <LangIcon name={item} key={index} />

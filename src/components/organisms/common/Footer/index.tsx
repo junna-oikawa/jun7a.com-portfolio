@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <>
       <div className={Style.wrapper}>
         <img src='/images/common/footer.svg' alt='' />
-        <p className='en'>&copy;JUNNA OIKAWA 2022</p>
+        <p className='en'>&copy;JUNNA OIKAWA 2026</p>
       </div>
     </>
   );

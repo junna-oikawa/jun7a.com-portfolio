@@ -10,7 +10,6 @@ const items = [
       'Unity, C#, Mayaを主として製作しました。計2名での共同製作です。',
       '主にキャラクターモデリング・骨入れ・アニメーション、カメラ(コーディング)、コントローラ連携を担当しました。',
     ],
-    href: 'https://jun7a.com/works_page/VR/index.php',
     folderName: 'works/others/vr',
     imgNum: 5,
     id: 'stroller',
