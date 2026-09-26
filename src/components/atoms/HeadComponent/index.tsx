@@ -8,10 +8,10 @@ const HeadComponent: React.FC = () => {
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-        <title>Junna Oikawa&apos;s Portfolio | 及川純奈</title>
+        <title>Junna Oikawa&apos;s Portfolio</title>
         <meta
           name='description'
-          content='Junna Oikawa | 及川純奈のポートフォリオサイトです。'
+          content='Junna Oikawa のポートフォリオサイトです。'
         />
         <link rel='canonical' href='https://jun7a-portfolio.vercel.app/' />
         <link
@@ -49,7 +49,7 @@ const HeadComponent: React.FC = () => {
         <meta property='og:site_name' content='Jun7a Portfolio' />
         <meta
           property='og:description'
-          content='Junna Oikawa | 及川純奈のポートフォリオサイトです。'
+          content='Junna Oikawa のポートフォリオサイトです。'
         />
         <meta
           property='og:image'

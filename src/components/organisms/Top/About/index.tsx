@@ -44,7 +44,7 @@ const About: React.FC = () => {
           </div>
           <div className={Style.right}>
             <h3>
-              及川 純奈 | <span className='en'>Junna Oikawa</span>
+              <span className='en'>Junna Oikawa</span>
             </h3>
             <p>岩手県出身</p>
             <p>
