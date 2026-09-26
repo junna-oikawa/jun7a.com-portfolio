@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Layout from '../Layout';
 import Style from './style.module.scss';
 
@@ -11,15 +10,18 @@ const AppLink: React.FC<Props> = ({ href }: Props) => {
     <>
       <Layout heading='App URL' kana='アプリURL'>
         <div className={Style.wrapper}>
-          <Link href={href}>
-            <a href={href} target='_brank' className='en'>
-              {href}
-              <img
-                src='/images/works/common/open_in_new.svg'
-                alt='別タブでアプリを開く'
-              />
-            </a>
-          </Link>
+          <a
+            href={href}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='en'
+          >
+            {href}
+            <img
+              src='/images/works/common/open_in_new.svg'
+              alt='別タブでアプリを開く'
+            />
+          </a>
         </div>
       </Layout>
     </>

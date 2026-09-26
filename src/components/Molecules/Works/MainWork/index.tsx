@@ -21,25 +21,23 @@ const MainWork: React.FC<Props> = ({
   href,
 }: Props) => {
   return (
-    <Link href={href}>
-      <div className={Style.wrapper}>
-        <div className={Style.left}>
-          <WorksIcon src={imgSrc} className={imgClassName} />
+    <Link href={href} className={Style.wrapper}>
+      <div className={Style.left}>
+        <WorksIcon src={imgSrc} className={imgClassName} />
+      </div>
+      <div className={Style.right}>
+        <h3>{title}</h3>
+        <p>{desc}</p>
+        <div className={Style.tags}>
+          {tags.map((tag, index) => (
+            <WorksTag tagName={tag} key={index} />
+          ))}
         </div>
-        <div className={Style.right}>
-          <h3>{title}</h3>
-          <p>{desc}</p>
-          <div className={Style.tags}>
-            {tags.map((tag, index) => (
-              <WorksTag tagName={tag} key={index} />
-            ))}
-          </div>
 
-          <a>
-            もっとみる
-            <img src='/images/common/buttons/arrow_brown.svg' alt='' />
-          </a>
-        </div>
+        <span className={Style.more}>
+          もっとみる
+          <img src='/images/common/buttons/arrow_brown.svg' alt='' />
+        </span>
       </div>
     </Link>
   );

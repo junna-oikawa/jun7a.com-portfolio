@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
-// eslint-disable-next-line
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
-
-SwiperCore.use([Pagination, Navigation, Autoplay]);
+import 'swiper/css/navigation';
 
 import Style from './style.module.scss';
 
@@ -29,6 +27,7 @@ const Card: React.FC<Props> = ({
     <div className={Style.wrapper} id={id}>
       <div className={Style.top}>
         <Swiper
+          modules={[Navigation, Autoplay]}
           slidesPerView={1}
           navigation={{
             nextEl: `.swiper-button-next`,

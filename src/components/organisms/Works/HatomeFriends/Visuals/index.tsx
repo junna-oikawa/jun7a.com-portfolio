@@ -1,11 +1,9 @@
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// eslint-disable-next-line
 import 'swiper/css';
+import 'swiper/css/pagination';
 import Layout from '../Layout';
 import Style from './style.module.scss';
-
-SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 const images: string[] = [
   'visual_01.JPG',
@@ -26,6 +24,7 @@ const Visuals: React.FC = () => {
         <div className={Style.wrapper}>
           <div className={Style.swiper_wrapper}>
             <Swiper
+              modules={[Pagination, Autoplay]}
               breakpoints={{
                 768: {
                   spaceBetween: 30,

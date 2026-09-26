@@ -34,9 +34,7 @@ const Works: React.FC = () => {
         <div className={Style.contents}>
           {imagesSrc.map((img, index) => (
             <Link href={img.href} key={index}>
-              <a>
-                <WorksIcon src={img.src} className={img.className} />
-              </a>
+              <WorksIcon src={img.src} className={img.className} />
             </Link>
           ))}
         </div>

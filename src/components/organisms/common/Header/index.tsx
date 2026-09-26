@@ -10,28 +10,20 @@ const Header: React.FC<Props> = ({ isTopPage }: Props) => {
     <>
       <div className={Style.wrapper}>
         <Link href='/'>
-          <a>
-            <img src='/images/common/header_logo.png' alt='J' />
-            <h1 className={`en ${Style.logo_en}`}>unna Oikawa</h1>
-            {isTopPage && <h1 className={Style.logo_jp}>ゅんな おいかわ</h1>}
-          </a>
+          <img src='/images/common/header_logo.png' alt='J' />
+          <h1 className={`en ${Style.logo_en}`}>unna Oikawa</h1>
+          {isTopPage && <h1 className={Style.logo_jp}>ゅんな おいかわ</h1>}
         </Link>
         <nav>
           <ul>
             <li className='en'>
-              <Link href='/#works'>
-                <a>Works</a>
-              </Link>
+              <Link href='/#works'>Works</Link>
             </li>
             <li className='en'>
-              <Link href='/#about'>
-                <a>About</a>
-              </Link>
+              <Link href='/#about'>About</Link>
             </li>
             <li className='en'>
-              <Link href='/#memory'>
-                <a>Memory</a>
-              </Link>
+              <Link href='/#memory'>Memory</Link>
             </li>
           </ul>
         </nav>
